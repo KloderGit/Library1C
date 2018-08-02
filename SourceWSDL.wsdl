@@ -47,6 +47,11 @@
           <xs:element name="Name" type="xs:string"/>
         </xs:sequence>
       </xs:complexType>
+      <xs:complexType name="flGUIDs">
+        <xs:sequence>
+          <xs:element name="GUID" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
       <xs:complexType name="formControl">
         <xs:sequence>
           <xs:element name="GUIDFormControl" type="xs:string"/>
@@ -1052,7 +1057,7 @@
           </xs:sequence>
         </xs:complexType>
       </xs:element>
-      <xs:element name="ДобавитьСтудентаВВедомостьПосещаемости">Response
+      <xs:element name="ДобавитьСтудентаВВедомостьПосещаемости">
         <xs:complexType>
           <xs:sequence>
             <xs:element name="GUIDVP" type="xs:string"/>
@@ -1151,6 +1156,36 @@
         <xs:complexType>
           <xs:sequence>
             <xs:element name="return" type="tns:ProgramEdu"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ПолучитьGUIDФизЛицаПоКартеИПаролю">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="login" type="xs:string"/>
+            <xs:element name="pass" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ПолучитьGUIDФизЛицаПоКартеИПаролюResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ПолучитьGUIDФизЛицаПоТелефонуИлиПочте">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Phone" type="xs:string" nillable="true"/>
+            <xs:element name="Email" type="xs:string" nillable="true"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string" nillable="true"/>
           </xs:sequence>
         </xs:complexType>
       </xs:element>
@@ -1384,6 +1419,18 @@
   <message name="ПолучитьДанныеОПрограммеResponseMessage">
     <part name="parameters" element="tns:ПолучитьДанныеОПрограммеResponse"/>
   </message>
+  <message name="ПолучитьGUIDФизЛицаПоКартеИПаролюRequestMessage">
+    <part name="parameters" element="tns:ПолучитьGUIDФизЛицаПоКартеИПаролю"/>
+  </message>
+  <message name="ПолучитьGUIDФизЛицаПоКартеИПаролюResponseMessage">
+    <part name="parameters" element="tns:ПолучитьGUIDФизЛицаПоКартеИПаролюResponse"/>
+  </message>
+  <message name="ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеRequestMessage">
+    <part name="parameters" element="tns:ПолучитьGUIDФизЛицаПоТелефонуИлиПочте"/>
+  </message>
+  <message name="ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеResponseMessage">
+    <part name="parameters" element="tns:ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеResponse"/>
+  </message>
   <portType name="ПФ_ПорталДПОPortType">
     <operation name="ПолучитьСлушателей">
       <input message="tns:ПолучитьСлушателейRequestMessage"/>
@@ -1536,6 +1583,14 @@
     <operation name="ПолучитьДанныеОПрограмме">
       <input message="tns:ПолучитьДанныеОПрограммеRequestMessage"/>
       <output message="tns:ПолучитьДанныеОПрограммеResponseMessage"/>
+    </operation>
+    <operation name="ПолучитьGUIDФизЛицаПоКартеИПаролю">
+      <input message="tns:ПолучитьGUIDФизЛицаПоКартеИПаролюRequestMessage"/>
+      <output message="tns:ПолучитьGUIDФизЛицаПоКартеИПаролюResponseMessage"/>
+    </operation>
+    <operation name="ПолучитьGUIDФизЛицаПоТелефонуИлиПочте">
+      <input message="tns:ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеRequestMessage"/>
+      <output message="tns:ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеResponseMessage"/>
     </operation>
   </portType>
   <binding name="ПФ_ПорталДПОSoapBinding" type="tns:ПФ_ПорталДПОPortType">
@@ -1882,6 +1937,24 @@
         <soapbind:body use="literal"/>
       </output>
     </operation>
+    <operation name="ПолучитьGUIDФизЛицаПоКартеИПаролю">
+      <soapbind:operation style="document" soapAction="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьGUIDФизЛицаПоКартеИПаролю"/>
+      <input>
+        <soapbind:body use="literal"/>
+      </input>
+      <output>
+        <soapbind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ПолучитьGUIDФизЛицаПоТелефонуИлиПочте">
+      <soapbind:operation style="document" soapAction="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьGUIDФизЛицаПоТелефонуИлиПочте"/>
+      <input>
+        <soapbind:body use="literal"/>
+      </input>
+      <output>
+        <soapbind:body use="literal"/>
+      </output>
+    </operation>
   </binding>
   <binding name="ПФ_ПорталДПОSoap12Binding" type="tns:ПФ_ПорталДПОPortType">
     <soap12bind:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
@@ -2220,6 +2293,24 @@
     </operation>
     <operation name="ПолучитьДанныеОПрограмме">
       <soap12bind:operation style="document" soapAction="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьДанныеОПрограмме"/>
+      <input>
+        <soap12bind:body use="literal"/>
+      </input>
+      <output>
+        <soap12bind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ПолучитьGUIDФизЛицаПоКартеИПаролю">
+      <soap12bind:operation style="document" soapAction="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьGUIDФизЛицаПоКартеИПаролю"/>
+      <input>
+        <soap12bind:body use="literal"/>
+      </input>
+      <output>
+        <soap12bind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ПолучитьGUIDФизЛицаПоТелефонуИлиПочте">
+      <soap12bind:operation style="document" soapAction="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьGUIDФизЛицаПоТелефонуИлиПочте"/>
       <input>
         <soap12bind:body use="literal"/>
       </input>
