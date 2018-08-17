@@ -50,16 +50,16 @@ namespace Library1C.Repositories
         /// <summary>
         /// Получить Guid ФЛ по телефону или почте
         /// </summary>
-        public async Task<string> GetGuidByPhoneOrEmail(string phone, string email)
+        public async Task<flGUIDs> GetGuidByPhoneOrEmail(string phone, string email)
         {
             var query = await service.ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеAsync(phone, email);
-            return query.@return;
+            return query.@return as flGUIDs;
         }
 
         /// <summary>
         /// Получить Guid ФЛ по данным карты
         /// </summary>
-        public async Task<string> GetGuidByCard(string login, string password)
+        public async Task<flGUIDs> GetGuidByCard(string login, string password)
         {
             var query = await service.ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеAsync(login, password);
             return query.@return;

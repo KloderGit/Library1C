@@ -1185,7 +1185,7 @@
       <xs:element name="ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеResponse">
         <xs:complexType>
           <xs:sequence>
-            <xs:element name="return" type="xs:string" nillable="true"/>
+            <xs:element name="return" type="tns:flGUIDs" nillable="true"/>
           </xs:sequence>
         </xs:complexType>
       </xs:element>

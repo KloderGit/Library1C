@@ -18,247 +18,207 @@ namespace ServiceReference1C
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьСлушателей", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьСлушателейResponse> ПолучитьСлушателейAsync(ServiceReference1C.ПолучитьСлушателейRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьУспеваемость", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьУспеваемостьResponse> ПолучитьУспеваемостьAsync(ServiceReference1C.ПолучитьУспеваемостьRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьДоговора", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьДоговораResponse> ПолучитьДоговораAsync(ServiceReference1C.ПолучитьДоговораRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьОплаты", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьОплатыResponse> ПолучитьОплатыAsync(ServiceReference1C.ПолучитьОплатыRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:СоздатьВедомость", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.СоздатьВедомостьResponse> СоздатьВедомостьAsync(ServiceReference1C.СоздатьВедомостьRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ВнестиОценки", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ВнестиОценкиResponse> ВнестиОценкиAsync(ServiceReference1C.ВнестиОценкиRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ОтправитьОценкиНаПортал", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ОтправитьОценкиНаПорталResponse> ОтправитьОценкиНаПорталAsync(ServiceReference1C.ОтправитьОценкиНаПорталRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ДобавитьСтудентаВВедомость", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ДобавитьСтудентаВВедомостьResponse> ДобавитьСтудентаВВедомостьAsync(ServiceReference1C.ДобавитьСтудентаВВедомостьRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьПреподавателей", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьПреподавателейResponse> ПолучитьПреподавателейAsync(ServiceReference1C.ПолучитьПреподавателейRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьФормыКонтроля", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьФормыКонтроляResponse> ПолучитьФормыКонтроляAsync(ServiceReference1C.ПолучитьФормыКонтроляRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьДисциплины", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьДисциплиныResponse> ПолучитьДисциплиныAsync(ServiceReference1C.ПолучитьДисциплиныRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьПрограммыОбучения", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьПрограммыОбученияResponse> ПолучитьПрограммыОбученияAsync(ServiceReference1C.ПолучитьПрограммыОбученияRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьГруппы", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьГруппыResponse> ПолучитьГруппыAsync(ServiceReference1C.ПолучитьГруппыRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьУровниОбразования", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьУровниОбразованияResponse> ПолучитьУровниОбразованияAsync(ServiceReference1C.ПолучитьУровниОбразованияRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьБазовыеОбразования", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьБазовыеОбразованияResponse> ПолучитьБазовыеОбразованияAsync(ServiceReference1C.ПолучитьБазовыеОбразованияRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьОценки", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьОценкиResponse> ПолучитьОценкиAsync(ServiceReference1C.ПолучитьОценкиRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьТипыДоговоров", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьТипыДоговоровResponse> ПолучитьТипыДоговоровAsync(ServiceReference1C.ПолучитьТипыДоговоровRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьПлательщиков", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьПлательщиковResponse> ПолучитьПлательщиковAsync(ServiceReference1C.ПолучитьПлательщиковRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьОборудование", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьОборудованиеResponse> ПолучитьОборудованиеAsync(ServiceReference1C.ПолучитьОборудованиеRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьГруппыПрограммОбучения", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьГруппыПрограммОбученияResponse> ПолучитьГруппыПрограммОбученияAsync(ServiceReference1C.ПолучитьГруппыПрограммОбученияRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьВидыПрограмм", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьВидыПрограммResponse> ПолучитьВидыПрограммAsync(ServiceReference1C.ПолучитьВидыПрограммRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьФормыОбучения", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьФормыОбученияResponse> ПолучитьФормыОбученияAsync(ServiceReference1C.ПолучитьФормыОбученияRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьСпециальности", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьСпециальностиResponse> ПолучитьСпециальностиAsync(ServiceReference1C.ПолучитьСпециальностиRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьТипыМероприятий", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьТипыМероприятийResponse> ПолучитьТипыМероприятийAsync(ServiceReference1C.ПолучитьТипыМероприятийRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьКвалификации", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьКвалификацииResponse> ПолучитьКвалификацииAsync(ServiceReference1C.ПолучитьКвалификацииRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьВыдаваемыеДокументы", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьВыдаваемыеДокументыResponse> ПолучитьВыдаваемыеДокументыAsync(ServiceReference1C.ПолучитьВыдаваемыеДокументыRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьУспеваемостьСтудентов", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьУспеваемостьСтудентовResponse> ПолучитьУспеваемостьСтудентовAsync(ServiceReference1C.ПолучитьУспеваемостьСтудентовRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьСлушателейПоФИО", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьСлушателейПоФИОResponse> ПолучитьСлушателейПоФИОAsync(ServiceReference1C.ПолучитьСлушателейПоФИОRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:СоздатьАттестационнуюВедомость", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.СоздатьАттестационнуюВедомостьResponse> СоздатьАттестационнуюВедомостьAsync(ServiceReference1C.СоздатьАттестационнуюВедомостьRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ДобавитьСтудентаВАттестационнуюВедомост" +
             "ь", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ДобавитьСтудентаВАттестационнуюВедомостьResponse> ДобавитьСтудентаВАттестационнуюВедомостьAsync(ServiceReference1C.ДобавитьСтудентаВАттестационнуюВедомостьRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:СоздатьВедомостьПосещаемости", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.СоздатьВедомостьПосещаемостиResponse> СоздатьВедомостьПосещаемостиAsync(ServiceReference1C.СоздатьВедомостьПосещаемостиRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ДобавитьСтудентаВВедомостьПосещаемости", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ДобавитьСтудентаВВедомостьПосещаемостиResponse> ДобавитьСтудентаВВедомостьПосещаемостиAsync(ServiceReference1C.ДобавитьСтудентаВВедомостьПосещаемостиRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьДанныеОСлушателяхФЛ", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьДанныеОСлушателяхФЛResponse> ПолучитьДанныеОСлушателяхФЛAsync(ServiceReference1C.ПолучитьДанныеОСлушателяхФЛRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьДанныеПоАттестациямФЛ", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
         System.Threading.Tasks.Task<ServiceReference1C.ФизЛицо> ПолучитьДанныеПоАттестациямФЛAsync(string GUIDФизЛица);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьДанныеОФЛ", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
         System.Threading.Tasks.Task<ServiceReference1C.ДанныеПоФизЛицу> ПолучитьДанныеОФЛAsync(string GUIDФизЛица);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьИзмененныеДанныеОФЛЗаПериод", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьИзмененныеДанныеОФЛЗаПериодResponse> ПолучитьИзмененныеДанныеОФЛЗаПериодAsync(ServiceReference1C.ПолучитьИзмененныеДанныеОФЛЗаПериодRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьИзмененныеДанныеОПрограммахДПОЗ" +
             "аПериод", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодResponse> ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодAsync(ServiceReference1C.ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьДанныеОПрограмме", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
         System.Threading.Tasks.Task<ServiceReference1C.ProgramEdu> ПолучитьДанныеОПрограммеAsync(string GUIDПрограммы);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьGUIDФизЛицаПоКартеИПаролю", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
         System.Threading.Tasks.Task<string> ПолучитьGUIDФизЛицаПоКартеИПаролюAsync(string login, string pass);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьGUIDФизЛицаПоТелефонуИлиПочте", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(flGUIDs))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         System.Threading.Tasks.Task<ServiceReference1C.ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеResponse> ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеAsync(ServiceReference1C.ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеRequest request);
     }
@@ -5790,13 +5750,13 @@ namespace ServiceReference1C
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://localhost/dposervices", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string @return;
+        public ServiceReference1C.flGUIDs @return;
         
         public ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеResponse()
         {
         }
         
-        public ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеResponse(string @return)
+        public ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеResponse(ServiceReference1C.flGUIDs @return)
         {
             this.@return = @return;
         }
@@ -5826,7 +5786,6 @@ namespace ServiceReference1C
 
             ChannelFactory.Credentials.UserName.UserName = "Kloder";
             ChannelFactory.Credentials.UserName.Password = "Kaligula2";
-
             ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
         }
         
@@ -6360,7 +6319,6 @@ namespace ServiceReference1C
             {
                 System.ServiceModel.BasicHttpBinding result = new System.ServiceModel.BasicHttpBinding(System.ServiceModel.BasicHttpSecurityMode.TransportCredentialOnly);
                 result.Security.Transport.ClientCredentialType = System.ServiceModel.HttpClientCredentialType.Basic;
-
                 result.MaxBufferSize = int.MaxValue;
                 result.ReaderQuotas = System.Xml.XmlDictionaryReaderQuotas.Max;
                 result.MaxReceivedMessageSize = int.MaxValue;
