@@ -9,9 +9,9 @@ namespace Library1C
     {
         ПФ_ПорталДПОPortTypeClient service;
 
-        public UnitOfWork()
+        public UnitOfWork(string user, string pass)
         {
-            service = new ПФ_ПорталДПОPortTypeClient(ПФ_ПорталДПОPortTypeClient.EndpointConfiguration.ПФ_ПорталДПОSoap);
+            service = new ПФ_ПорталДПОPortTypeClient(ПФ_ПорталДПОPortTypeClient.EndpointConfiguration.ПФ_ПорталДПОSoap, user, pass);
         }
 
         ICommonRepository<ProgramEdu> ProgramRepository;

@@ -5779,13 +5779,13 @@ namespace ServiceReference1C
     /// <param name="clientCredentials">Учетные данные клиента.</param>
     static partial void ConfigureEndpoint(System.ServiceModel.Description.ServiceEndpoint serviceEndpoint, System.ServiceModel.Description.ClientCredentials clientCredentials);
         
-        public ПФ_ПорталДПОPortTypeClient(EndpointConfiguration endpointConfiguration) : 
+        public ПФ_ПорталДПОPortTypeClient(EndpointConfiguration endpointConfiguration, string User, string Pass) : 
                 base(ПФ_ПорталДПОPortTypeClient.GetBindingForEndpoint(endpointConfiguration), ПФ_ПорталДПОPortTypeClient.GetEndpointAddress(endpointConfiguration))
         {
             this.Endpoint.Name = endpointConfiguration.ToString();
 
-            ChannelFactory.Credentials.UserName.UserName = "Kloder";
-            ChannelFactory.Credentials.UserName.Password = "Kaligula2";
+            ChannelFactory.Credentials.UserName.UserName = User;
+            ChannelFactory.Credentials.UserName.Password = Pass;
             ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
         }
         
