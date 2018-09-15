@@ -57,13 +57,23 @@ namespace Library1C.Repositories
         }
 
         /// <summary>
+        /// Создать ФЛ
+        /// </summary>
+        public async Task<flGUIDs> Add(string FIO, string Phone, string Email, DateTime BirthDay, 
+            string City = "", string Position ="", string Education = "", string Expirience="", string Address="" )
+        {
+            var query = await service.СоздатьФизЛицоAsync(FIO, City, Email, Position, BirthDay, Education, Expirience, Address, Phone);
+            return query.@return as flGUIDs;
+        }
+
+        /// <summary>
         /// Получить Guid ФЛ по данным карты
         /// </summary>
-        public async Task<flGUIDs> GetGuidByCard(string login, string password)
-        {
-            var query = await service.ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеAsync(login, password);
-            return query.@return;
-        }
+        //public async Task<flGUIDs> GetGuidByCard(string login, string password)
+        //{
+        //    var query = await service.ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеAsync(login, password);
+        //    return query.@return;
+        //}
 
         protected async Task<ДанныеПоФизЛицу> GetFLAsync(string guid)
         {

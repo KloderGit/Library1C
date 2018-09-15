@@ -126,6 +126,10 @@
         <xs:sequence>
           <xs:element name="ГУИД" type="xs:string"/>
           <xs:element name="Наименование" type="xs:string"/>
+          <xs:element name="ГУИДПрограммы" type="xs:string"/>
+          <xs:element name="ДатаНачала" type="xs:date"/>
+          <xs:element name="ДатаОкончания" type="xs:date"/>
+          <xs:element name="СписокПодгрупп" type="tns:СписокПодгрупп"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="ГруппаПрограммыОбучения">
@@ -277,6 +281,12 @@
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="Плательщик">
+        <xs:sequence>
+          <xs:element name="ГУИД" type="xs:string"/>
+          <xs:element name="Наименование" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Подгруппа">
         <xs:sequence>
           <xs:element name="ГУИД" type="xs:string"/>
           <xs:element name="Наименование" type="xs:string"/>
@@ -440,6 +450,11 @@
       <xs:complexType name="СписокПлательщиков">
         <xs:sequence>
           <xs:element name="Состав" type="tns:Плательщик" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="СписокПодгрупп">
+        <xs:sequence>
+          <xs:element name="Состав" type="tns:Подгруппа" maxOccurs="unbounded"/>
         </xs:sequence>
       </xs:complexType>
       <xs:complexType name="СписокПреподавателей">
@@ -1189,6 +1204,28 @@
           </xs:sequence>
         </xs:complexType>
       </xs:element>
+      <xs:element name="СоздатьФизЛицо">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ФИО" type="xs:string"/>
+            <xs:element name="Город" type="xs:string"/>
+            <xs:element name="Email" type="xs:string"/>
+            <xs:element name="Должность" type="xs:string"/>
+            <xs:element name="ДатаРождения" type="xs:date"/>
+            <xs:element name="Образование" type="xs:string"/>
+            <xs:element name="ОпытЗанятияСпортом" type="xs:string"/>
+            <xs:element name="МестоЖительства" type="xs:string"/>
+            <xs:element name="Телефон" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="СоздатьФизЛицоResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="tns:flGUIDs"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
     </xs:schema>
   </types>
   <message name="ПолучитьСлушателейRequestMessage">
@@ -1431,6 +1468,12 @@
   <message name="ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеResponseMessage">
     <part name="parameters" element="tns:ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеResponse"/>
   </message>
+  <message name="СоздатьФизЛицоRequestMessage">
+    <part name="parameters" element="tns:СоздатьФизЛицо"/>
+  </message>
+  <message name="СоздатьФизЛицоResponseMessage">
+    <part name="parameters" element="tns:СоздатьФизЛицоResponse"/>
+  </message>
   <portType name="ПФ_ПорталДПОPortType">
     <operation name="ПолучитьСлушателей">
       <input message="tns:ПолучитьСлушателейRequestMessage"/>
@@ -1591,6 +1634,10 @@
     <operation name="ПолучитьGUIDФизЛицаПоТелефонуИлиПочте">
       <input message="tns:ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеRequestMessage"/>
       <output message="tns:ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеResponseMessage"/>
+    </operation>
+    <operation name="СоздатьФизЛицо">
+      <input message="tns:СоздатьФизЛицоRequestMessage"/>
+      <output message="tns:СоздатьФизЛицоResponseMessage"/>
     </operation>
   </portType>
   <binding name="ПФ_ПорталДПОSoapBinding" type="tns:ПФ_ПорталДПОPortType">
@@ -1955,6 +2002,15 @@
         <soapbind:body use="literal"/>
       </output>
     </operation>
+    <operation name="СоздатьФизЛицо">
+      <soapbind:operation style="document" soapAction="http://localhost/dposervices#ПФ_ПорталДПО:СоздатьФизЛицо"/>
+      <input>
+        <soapbind:body use="literal"/>
+      </input>
+      <output>
+        <soapbind:body use="literal"/>
+      </output>
+    </operation>
   </binding>
   <binding name="ПФ_ПорталДПОSoap12Binding" type="tns:ПФ_ПорталДПОPortType">
     <soap12bind:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
@@ -2311,6 +2367,15 @@
     </operation>
     <operation name="ПолучитьGUIDФизЛицаПоТелефонуИлиПочте">
       <soap12bind:operation style="document" soapAction="http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьGUIDФизЛицаПоТелефонуИлиПочте"/>
+      <input>
+        <soap12bind:body use="literal"/>
+      </input>
+      <output>
+        <soap12bind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="СоздатьФизЛицо">
+      <soap12bind:operation style="document" soapAction="http://localhost/dposervices#ПФ_ПорталДПО:СоздатьФизЛицо"/>
       <input>
         <soap12bind:body use="literal"/>
       </input>
