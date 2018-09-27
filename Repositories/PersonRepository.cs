@@ -2,6 +2,7 @@
 using ServiceReference1C;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -59,11 +60,33 @@ namespace Library1C.Repositories
         /// <summary>
         /// Создать ФЛ
         /// </summary>
-        public async Task<flGUIDs> Add(string FIO, string Phone, string Email, DateTime BirthDay, 
-            string City = "", string Position ="", string Education = "", string Expirience="", string Address="" )
+        public async Task<flGUIDs> Add(string FIO, string Phone, string Email, DateTime BirthDay = default(DateTime), 
+            string City = "", string Position = default(string), string Education = "", string Expirience="", string Address="" )
         {
-            var query = await service.СоздатьФизЛицоAsync(FIO, City, Email, Position, BirthDay, Education, Expirience, Address, Phone);
-            return query.@return as flGUIDs;
+            СоздатьФизЛицоResponse query = null;
+            try
+            {
+
+                //query = await service.СоздатьФизЛицоAsync("Тестовое Физ Лицо6", "", "dfff@ds.ru", "", DateTime.MinValue, "", "", "", "89031453456");
+
+                query = await service.СоздатьФизЛицоAsync(
+                    FIO = String.IsNullOrEmpty(FIO) ? "" : FIO, 
+                    City = String.IsNullOrEmpty(City) ? "" : City , 
+                    Email = String.IsNullOrEmpty(Email) ? "" : Email, 
+                    Position = String.IsNullOrEmpty(Position) ? "" : Position, 
+                    BirthDay, 
+                    Education = String.IsNullOrEmpty(Education) ? "" : Education, 
+                    Expirience = String.IsNullOrEmpty(Expirience) ? "" : Expirience, 
+                    Address = String.IsNullOrEmpty(Address) ? "" : Address, 
+                    Phone = String.IsNullOrEmpty(Phone) ? "" : Phone
+                );
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            return query?.@return as flGUIDs;
         }
 
         /// <summary>
