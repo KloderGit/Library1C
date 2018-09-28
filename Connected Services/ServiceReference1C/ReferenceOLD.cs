@@ -7,209 +7,209 @@
 // </автоматически создаваемое>
 //------------------------------------------------------------------------------
 
-namespace ServiceReference1C
+namespace ServiceReference1COLD
 {
 
 
     [System.CodeDom.Compiler.GeneratedCodeAttribute("dotnet-svcutil", "1.0.0.1")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace = "http://localhost/dposervices", ConfigurationName = "ServiceReference1C.ПФ_ПорталДПОPortType")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace = "http://localhost/dposervices", ConfigurationName = "ServiceReference1COLD.ПФ_ПорталДПОPortType")]
     public interface ПФ_ПорталДПОPortType
     {
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьСлушателей", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьСлушателейResponse> ПолучитьСлушателейAsync(ServiceReference1C.ПолучитьСлушателейRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьСлушателейResponse> ПолучитьСлушателейAsync(ServiceReference1COLD.ПолучитьСлушателейRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьУспеваемость", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьУспеваемостьResponse> ПолучитьУспеваемостьAsync(ServiceReference1C.ПолучитьУспеваемостьRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьУспеваемостьResponse> ПолучитьУспеваемостьAsync(ServiceReference1COLD.ПолучитьУспеваемостьRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьДоговора", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьДоговораResponse> ПолучитьДоговораAsync(ServiceReference1C.ПолучитьДоговораRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьДоговораResponse> ПолучитьДоговораAsync(ServiceReference1COLD.ПолучитьДоговораRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьОплаты", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьОплатыResponse> ПолучитьОплатыAsync(ServiceReference1C.ПолучитьОплатыRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьОплатыResponse> ПолучитьОплатыAsync(ServiceReference1COLD.ПолучитьОплатыRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:СоздатьВедомость", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.СоздатьВедомостьResponse> СоздатьВедомостьAsync(ServiceReference1C.СоздатьВедомостьRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.СоздатьВедомостьResponse> СоздатьВедомостьAsync(ServiceReference1COLD.СоздатьВедомостьRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ВнестиОценки", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ВнестиОценкиResponse> ВнестиОценкиAsync(ServiceReference1C.ВнестиОценкиRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ВнестиОценкиResponse> ВнестиОценкиAsync(ServiceReference1COLD.ВнестиОценкиRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ОтправитьОценкиНаПортал", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ОтправитьОценкиНаПорталResponse> ОтправитьОценкиНаПорталAsync(ServiceReference1C.ОтправитьОценкиНаПорталRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ОтправитьОценкиНаПорталResponse> ОтправитьОценкиНаПорталAsync(ServiceReference1COLD.ОтправитьОценкиНаПорталRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ДобавитьСтудентаВВедомость", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ДобавитьСтудентаВВедомостьResponse> ДобавитьСтудентаВВедомостьAsync(ServiceReference1C.ДобавитьСтудентаВВедомостьRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ДобавитьСтудентаВВедомостьResponse> ДобавитьСтудентаВВедомостьAsync(ServiceReference1COLD.ДобавитьСтудентаВВедомостьRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьПреподавателей", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьПреподавателейResponse> ПолучитьПреподавателейAsync(ServiceReference1C.ПолучитьПреподавателейRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьПреподавателейResponse> ПолучитьПреподавателейAsync(ServiceReference1COLD.ПолучитьПреподавателейRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьФормыКонтроля", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьФормыКонтроляResponse> ПолучитьФормыКонтроляAsync(ServiceReference1C.ПолучитьФормыКонтроляRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьФормыКонтроляResponse> ПолучитьФормыКонтроляAsync(ServiceReference1COLD.ПолучитьФормыКонтроляRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьДисциплины", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьДисциплиныResponse> ПолучитьДисциплиныAsync(ServiceReference1C.ПолучитьДисциплиныRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьДисциплиныResponse> ПолучитьДисциплиныAsync(ServiceReference1COLD.ПолучитьДисциплиныRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьПрограммыОбучения", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьПрограммыОбученияResponse> ПолучитьПрограммыОбученияAsync(ServiceReference1C.ПолучитьПрограммыОбученияRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьПрограммыОбученияResponse> ПолучитьПрограммыОбученияAsync(ServiceReference1COLD.ПолучитьПрограммыОбученияRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьГруппы", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьГруппыResponse> ПолучитьГруппыAsync(ServiceReference1C.ПолучитьГруппыRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьГруппыResponse> ПолучитьГруппыAsync(ServiceReference1COLD.ПолучитьГруппыRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьУровниОбразования", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьУровниОбразованияResponse> ПолучитьУровниОбразованияAsync(ServiceReference1C.ПолучитьУровниОбразованияRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьУровниОбразованияResponse> ПолучитьУровниОбразованияAsync(ServiceReference1COLD.ПолучитьУровниОбразованияRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьБазовыеОбразования", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьБазовыеОбразованияResponse> ПолучитьБазовыеОбразованияAsync(ServiceReference1C.ПолучитьБазовыеОбразованияRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьБазовыеОбразованияResponse> ПолучитьБазовыеОбразованияAsync(ServiceReference1COLD.ПолучитьБазовыеОбразованияRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьОценки", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьОценкиResponse> ПолучитьОценкиAsync(ServiceReference1C.ПолучитьОценкиRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьОценкиResponse> ПолучитьОценкиAsync(ServiceReference1COLD.ПолучитьОценкиRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьТипыДоговоров", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьТипыДоговоровResponse> ПолучитьТипыДоговоровAsync(ServiceReference1C.ПолучитьТипыДоговоровRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьТипыДоговоровResponse> ПолучитьТипыДоговоровAsync(ServiceReference1COLD.ПолучитьТипыДоговоровRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьПлательщиков", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьПлательщиковResponse> ПолучитьПлательщиковAsync(ServiceReference1C.ПолучитьПлательщиковRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьПлательщиковResponse> ПолучитьПлательщиковAsync(ServiceReference1COLD.ПолучитьПлательщиковRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьОборудование", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьОборудованиеResponse> ПолучитьОборудованиеAsync(ServiceReference1C.ПолучитьОборудованиеRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьОборудованиеResponse> ПолучитьОборудованиеAsync(ServiceReference1COLD.ПолучитьОборудованиеRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьГруппыПрограммОбучения", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьГруппыПрограммОбученияResponse> ПолучитьГруппыПрограммОбученияAsync(ServiceReference1C.ПолучитьГруппыПрограммОбученияRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьГруппыПрограммОбученияResponse> ПолучитьГруппыПрограммОбученияAsync(ServiceReference1COLD.ПолучитьГруппыПрограммОбученияRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьВидыПрограмм", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьВидыПрограммResponse> ПолучитьВидыПрограммAsync(ServiceReference1C.ПолучитьВидыПрограммRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьВидыПрограммResponse> ПолучитьВидыПрограммAsync(ServiceReference1COLD.ПолучитьВидыПрограммRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьФормыОбучения", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьФормыОбученияResponse> ПолучитьФормыОбученияAsync(ServiceReference1C.ПолучитьФормыОбученияRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьФормыОбученияResponse> ПолучитьФормыОбученияAsync(ServiceReference1COLD.ПолучитьФормыОбученияRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьСпециальности", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьСпециальностиResponse> ПолучитьСпециальностиAsync(ServiceReference1C.ПолучитьСпециальностиRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьСпециальностиResponse> ПолучитьСпециальностиAsync(ServiceReference1COLD.ПолучитьСпециальностиRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьТипыМероприятий", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьТипыМероприятийResponse> ПолучитьТипыМероприятийAsync(ServiceReference1C.ПолучитьТипыМероприятийRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьТипыМероприятийResponse> ПолучитьТипыМероприятийAsync(ServiceReference1COLD.ПолучитьТипыМероприятийRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьКвалификации", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьКвалификацииResponse> ПолучитьКвалификацииAsync(ServiceReference1C.ПолучитьКвалификацииRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьКвалификацииResponse> ПолучитьКвалификацииAsync(ServiceReference1COLD.ПолучитьКвалификацииRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьВыдаваемыеДокументы", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьВыдаваемыеДокументыResponse> ПолучитьВыдаваемыеДокументыAsync(ServiceReference1C.ПолучитьВыдаваемыеДокументыRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьВыдаваемыеДокументыResponse> ПолучитьВыдаваемыеДокументыAsync(ServiceReference1COLD.ПолучитьВыдаваемыеДокументыRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьУспеваемостьСтудентов", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьУспеваемостьСтудентовResponse> ПолучитьУспеваемостьСтудентовAsync(ServiceReference1C.ПолучитьУспеваемостьСтудентовRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьУспеваемостьСтудентовResponse> ПолучитьУспеваемостьСтудентовAsync(ServiceReference1COLD.ПолучитьУспеваемостьСтудентовRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьСлушателейПоФИО", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьСлушателейПоФИОResponse> ПолучитьСлушателейПоФИОAsync(ServiceReference1C.ПолучитьСлушателейПоФИОRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьСлушателейПоФИОResponse> ПолучитьСлушателейПоФИОAsync(ServiceReference1COLD.ПолучитьСлушателейПоФИОRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:СоздатьАттестационнуюВедомость", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.СоздатьАттестационнуюВедомостьResponse> СоздатьАттестационнуюВедомостьAsync(ServiceReference1C.СоздатьАттестационнуюВедомостьRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.СоздатьАттестационнуюВедомостьResponse> СоздатьАттестационнуюВедомостьAsync(ServiceReference1COLD.СоздатьАттестационнуюВедомостьRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ДобавитьСтудентаВАттестационнуюВедомост" +
             "ь", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ДобавитьСтудентаВАттестационнуюВедомостьResponse> ДобавитьСтудентаВАттестационнуюВедомостьAsync(ServiceReference1C.ДобавитьСтудентаВАттестационнуюВедомостьRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ДобавитьСтудентаВАттестационнуюВедомостьResponse> ДобавитьСтудентаВАттестационнуюВедомостьAsync(ServiceReference1COLD.ДобавитьСтудентаВАттестационнуюВедомостьRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:СоздатьВедомостьПосещаемости", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.СоздатьВедомостьПосещаемостиResponse> СоздатьВедомостьПосещаемостиAsync(ServiceReference1C.СоздатьВедомостьПосещаемостиRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.СоздатьВедомостьПосещаемостиResponse> СоздатьВедомостьПосещаемостиAsync(ServiceReference1COLD.СоздатьВедомостьПосещаемостиRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ДобавитьСтудентаВВедомостьПосещаемости", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ДобавитьСтудентаВВедомостьПосещаемостиResponse> ДобавитьСтудентаВВедомостьПосещаемостиAsync(ServiceReference1C.ДобавитьСтудентаВВедомостьПосещаемостиRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ДобавитьСтудентаВВедомостьПосещаемостиResponse> ДобавитьСтудентаВВедомостьПосещаемостиAsync(ServiceReference1COLD.ДобавитьСтудентаВВедомостьПосещаемостиRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьДанныеОСлушателяхФЛ", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьДанныеОСлушателяхФЛResponse> ПолучитьДанныеОСлушателяхФЛAsync(ServiceReference1C.ПолучитьДанныеОСлушателяхФЛRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьДанныеОСлушателяхФЛResponse> ПолучитьДанныеОСлушателяхФЛAsync(ServiceReference1COLD.ПолучитьДанныеОСлушателяхФЛRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьДанныеПоАттестациямФЛ", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
-        System.Threading.Tasks.Task<ServiceReference1C.ФизЛицо> ПолучитьДанныеПоАттестациямФЛAsync(string GUIDФизЛица);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ФизЛицо> ПолучитьДанныеПоАттестациямФЛAsync(string GUIDФизЛица);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьДанныеОФЛ", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
-        System.Threading.Tasks.Task<ServiceReference1C.ДанныеПоФизЛицу> ПолучитьДанныеОФЛAsync(string GUIDФизЛица);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ДанныеПоФизЛицу> ПолучитьДанныеОФЛAsync(string GUIDФизЛица);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьИзмененныеДанныеОФЛЗаПериод", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьИзмененныеДанныеОФЛЗаПериодResponse> ПолучитьИзмененныеДанныеОФЛЗаПериодAsync(ServiceReference1C.ПолучитьИзмененныеДанныеОФЛЗаПериодRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьИзмененныеДанныеОФЛЗаПериодResponse> ПолучитьИзмененныеДанныеОФЛЗаПериодAsync(ServiceReference1COLD.ПолучитьИзмененныеДанныеОФЛЗаПериодRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьИзмененныеДанныеОПрограммахДПОЗ" +
             "аПериод", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодResponse> ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодAsync(ServiceReference1C.ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодResponse> ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодAsync(ServiceReference1COLD.ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьДанныеОПрограмме", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
-        System.Threading.Tasks.Task<ServiceReference1C.ProgramEdu> ПолучитьДанныеОПрограммеAsync(string GUIDПрограммы);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ProgramEdu> ПолучитьДанныеОПрограммеAsync(string GUIDПрограммы);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьGUIDФизЛицаПоКартеИПаролю", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
@@ -220,17 +220,12 @@ namespace ServiceReference1C
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ПолучитьGUIDФизЛицаПоТелефонуИлиПочте", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеResponse> ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеAsync(ServiceReference1C.ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеResponse> ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеAsync(ServiceReference1COLD.ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеRequest request);
 
         [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:СоздатьФизЛицо", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.СоздатьФизЛицоResponse> СоздатьФизЛицоAsync(ServiceReference1C.СоздатьФизЛицоRequest request);
-
-        [System.ServiceModel.OperationContractAttribute(Action = "http://localhost/dposervices#ПФ_ПорталДПО:ЗачислитьСтудента", ReplyAction = "*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults = true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(НайденныйСлушатель[]))]
-        System.Threading.Tasks.Task<ServiceReference1C.ЗачислитьСтудентаResponse> ЗачислитьСтудентаAsync(ServiceReference1C.ЗачислитьСтудентаRequest request);
+        System.Threading.Tasks.Task<ServiceReference1COLD.СоздатьФизЛицоResponse> СоздатьФизЛицоAsync(ServiceReference1COLD.СоздатьФизЛицоRequest request);
     }
 
     /// <remarks/>
@@ -4434,13 +4429,13 @@ namespace ServiceReference1C
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable = true)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.СтрокаСпискаСлушателей[] @return;
+        public ServiceReference1COLD.СтрокаСпискаСлушателей[] @return;
 
         public ПолучитьСлушателейResponse()
         {
         }
 
-        public ПолучитьСлушателейResponse(ServiceReference1C.СтрокаСпискаСлушателей[] @return)
+        public ПолучитьСлушателейResponse(ServiceReference1COLD.СтрокаСпискаСлушателей[] @return)
         {
             this.@return = @return;
         }
@@ -4477,13 +4472,13 @@ namespace ServiceReference1C
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable = true)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.СтрокаСпискаУспеваемости[] @return;
+        public ServiceReference1COLD.СтрокаСпискаУспеваемости[] @return;
 
         public ПолучитьУспеваемостьResponse()
         {
         }
 
-        public ПолучитьУспеваемостьResponse(ServiceReference1C.СтрокаСпискаУспеваемости[] @return)
+        public ПолучитьУспеваемостьResponse(ServiceReference1COLD.СтрокаСпискаУспеваемости[] @return)
         {
             this.@return = @return;
         }
@@ -4511,13 +4506,13 @@ namespace ServiceReference1C
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable = true)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.СтрокаСпискаДоговоров[] @return;
+        public ServiceReference1COLD.СтрокаСпискаДоговоров[] @return;
 
         public ПолучитьДоговораResponse()
         {
         }
 
-        public ПолучитьДоговораResponse(ServiceReference1C.СтрокаСпискаДоговоров[] @return)
+        public ПолучитьДоговораResponse(ServiceReference1COLD.СтрокаСпискаДоговоров[] @return)
         {
             this.@return = @return;
         }
@@ -4545,13 +4540,13 @@ namespace ServiceReference1C
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable = true)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.СтрокаСпискаОплат[] @return;
+        public ServiceReference1COLD.СтрокаСпискаОплат[] @return;
 
         public ПолучитьОплатыResponse()
         {
         }
 
-        public ПолучитьОплатыResponse(ServiceReference1C.СтрокаСпискаОплат[] @return)
+        public ПолучитьОплатыResponse(ServiceReference1COLD.СтрокаСпискаОплат[] @return)
         {
             this.@return = @return;
         }
@@ -4625,7 +4620,7 @@ namespace ServiceReference1C
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.СтрокаТЧВедомости[] ОценкиВедомости;
+        public ServiceReference1COLD.СтрокаТЧВедомости[] ОценкиВедомости;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 1)]
         public string ГУИДВедомости;
@@ -4634,7 +4629,7 @@ namespace ServiceReference1C
         {
         }
 
-        public ВнестиОценкиRequest(ServiceReference1C.СтрокаТЧВедомости[] ОценкиВедомости, string ГУИДВедомости)
+        public ВнестиОценкиRequest(ServiceReference1COLD.СтрокаТЧВедомости[] ОценкиВедомости, string ГУИДВедомости)
         {
             this.ОценкиВедомости = ОценкиВедомости;
             this.ГУИДВедомости = ГУИДВедомости;
@@ -4697,13 +4692,13 @@ namespace ServiceReference1C
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable = true)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.СтрокаТЧВедомости[] @return;
+        public ServiceReference1COLD.СтрокаТЧВедомости[] @return;
 
         public ОтправитьОценкиНаПорталResponse()
         {
         }
 
-        public ОтправитьОценкиНаПорталResponse(ServiceReference1C.СтрокаТЧВедомости[] @return)
+        public ОтправитьОценкиНаПорталResponse(ServiceReference1COLD.СтрокаТЧВедомости[] @return)
         {
             this.@return = @return;
         }
@@ -4776,13 +4771,13 @@ namespace ServiceReference1C
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable = true)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.Преподаватель[] @return;
+        public ServiceReference1COLD.Преподаватель[] @return;
 
         public ПолучитьПреподавателейResponse()
         {
         }
 
-        public ПолучитьПреподавателейResponse(ServiceReference1C.Преподаватель[] @return)
+        public ПолучитьПреподавателейResponse(ServiceReference1COLD.Преподаватель[] @return)
         {
             this.@return = @return;
         }
@@ -4810,13 +4805,13 @@ namespace ServiceReference1C
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable = true)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.ФормаКонтроля[] @return;
+        public ServiceReference1COLD.ФормаКонтроля[] @return;
 
         public ПолучитьФормыКонтроляResponse()
         {
         }
 
-        public ПолучитьФормыКонтроляResponse(ServiceReference1C.ФормаКонтроля[] @return)
+        public ПолучитьФормыКонтроляResponse(ServiceReference1COLD.ФормаКонтроля[] @return)
         {
             this.@return = @return;
         }
@@ -4844,13 +4839,13 @@ namespace ServiceReference1C
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable = true)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.Дисциплина[] @return;
+        public ServiceReference1COLD.Дисциплина[] @return;
 
         public ПолучитьДисциплиныResponse()
         {
         }
 
-        public ПолучитьДисциплиныResponse(ServiceReference1C.Дисциплина[] @return)
+        public ПолучитьДисциплиныResponse(ServiceReference1COLD.Дисциплина[] @return)
         {
             this.@return = @return;
         }
@@ -4878,13 +4873,13 @@ namespace ServiceReference1C
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable = true)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.СтрокаСпискаПрограммОбучения[] @return;
+        public ServiceReference1COLD.СтрокаСпискаПрограммОбучения[] @return;
 
         public ПолучитьПрограммыОбученияResponse()
         {
         }
 
-        public ПолучитьПрограммыОбученияResponse(ServiceReference1C.СтрокаСпискаПрограммОбучения[] @return)
+        public ПолучитьПрограммыОбученияResponse(ServiceReference1COLD.СтрокаСпискаПрограммОбучения[] @return)
         {
             this.@return = @return;
         }
@@ -4912,13 +4907,13 @@ namespace ServiceReference1C
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable = true)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.Группа[] @return;
+        public ServiceReference1COLD.Группа[] @return;
 
         public ПолучитьГруппыResponse()
         {
         }
 
-        public ПолучитьГруппыResponse(ServiceReference1C.Группа[] @return)
+        public ПолучитьГруппыResponse(ServiceReference1COLD.Группа[] @return)
         {
             this.@return = @return;
         }
@@ -4946,13 +4941,13 @@ namespace ServiceReference1C
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable = true)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.УровеньОбразования[] @return;
+        public ServiceReference1COLD.УровеньОбразования[] @return;
 
         public ПолучитьУровниОбразованияResponse()
         {
         }
 
-        public ПолучитьУровниОбразованияResponse(ServiceReference1C.УровеньОбразования[] @return)
+        public ПолучитьУровниОбразованияResponse(ServiceReference1COLD.УровеньОбразования[] @return)
         {
             this.@return = @return;
         }
@@ -4980,13 +4975,13 @@ namespace ServiceReference1C
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable = true)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.БазовоеОбразование[] @return;
+        public ServiceReference1COLD.БазовоеОбразование[] @return;
 
         public ПолучитьБазовыеОбразованияResponse()
         {
         }
 
-        public ПолучитьБазовыеОбразованияResponse(ServiceReference1C.БазовоеОбразование[] @return)
+        public ПолучитьБазовыеОбразованияResponse(ServiceReference1COLD.БазовоеОбразование[] @return)
         {
             this.@return = @return;
         }
@@ -5014,13 +5009,13 @@ namespace ServiceReference1C
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable = true)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.Оценка[] @return;
+        public ServiceReference1COLD.Оценка[] @return;
 
         public ПолучитьОценкиResponse()
         {
         }
 
-        public ПолучитьОценкиResponse(ServiceReference1C.Оценка[] @return)
+        public ПолучитьОценкиResponse(ServiceReference1COLD.Оценка[] @return)
         {
             this.@return = @return;
         }
@@ -5048,13 +5043,13 @@ namespace ServiceReference1C
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable = true)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.ТипДоговора[] @return;
+        public ServiceReference1COLD.ТипДоговора[] @return;
 
         public ПолучитьТипыДоговоровResponse()
         {
         }
 
-        public ПолучитьТипыДоговоровResponse(ServiceReference1C.ТипДоговора[] @return)
+        public ПолучитьТипыДоговоровResponse(ServiceReference1COLD.ТипДоговора[] @return)
         {
             this.@return = @return;
         }
@@ -5082,13 +5077,13 @@ namespace ServiceReference1C
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable = true)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.Плательщик[] @return;
+        public ServiceReference1COLD.Плательщик[] @return;
 
         public ПолучитьПлательщиковResponse()
         {
         }
 
-        public ПолучитьПлательщиковResponse(ServiceReference1C.Плательщик[] @return)
+        public ПолучитьПлательщиковResponse(ServiceReference1COLD.Плательщик[] @return)
         {
             this.@return = @return;
         }
@@ -5116,13 +5111,13 @@ namespace ServiceReference1C
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable = true)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.Оборудование[] @return;
+        public ServiceReference1COLD.Оборудование[] @return;
 
         public ПолучитьОборудованиеResponse()
         {
         }
 
-        public ПолучитьОборудованиеResponse(ServiceReference1C.Оборудование[] @return)
+        public ПолучитьОборудованиеResponse(ServiceReference1COLD.Оборудование[] @return)
         {
             this.@return = @return;
         }
@@ -5150,13 +5145,13 @@ namespace ServiceReference1C
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable = true)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.ГруппаПрограммыОбучения[] @return;
+        public ServiceReference1COLD.ГруппаПрограммыОбучения[] @return;
 
         public ПолучитьГруппыПрограммОбученияResponse()
         {
         }
 
-        public ПолучитьГруппыПрограммОбученияResponse(ServiceReference1C.ГруппаПрограммыОбучения[] @return)
+        public ПолучитьГруппыПрограммОбученияResponse(ServiceReference1COLD.ГруппаПрограммыОбучения[] @return)
         {
             this.@return = @return;
         }
@@ -5184,13 +5179,13 @@ namespace ServiceReference1C
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable = true)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.ВидПрограммы[] @return;
+        public ServiceReference1COLD.ВидПрограммы[] @return;
 
         public ПолучитьВидыПрограммResponse()
         {
         }
 
-        public ПолучитьВидыПрограммResponse(ServiceReference1C.ВидПрограммы[] @return)
+        public ПолучитьВидыПрограммResponse(ServiceReference1COLD.ВидПрограммы[] @return)
         {
             this.@return = @return;
         }
@@ -5218,13 +5213,13 @@ namespace ServiceReference1C
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable = true)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.ФормаОбучения[] @return;
+        public ServiceReference1COLD.ФормаОбучения[] @return;
 
         public ПолучитьФормыОбученияResponse()
         {
         }
 
-        public ПолучитьФормыОбученияResponse(ServiceReference1C.ФормаОбучения[] @return)
+        public ПолучитьФормыОбученияResponse(ServiceReference1COLD.ФормаОбучения[] @return)
         {
             this.@return = @return;
         }
@@ -5252,13 +5247,13 @@ namespace ServiceReference1C
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable = true)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.Специальность[] @return;
+        public ServiceReference1COLD.Специальность[] @return;
 
         public ПолучитьСпециальностиResponse()
         {
         }
 
-        public ПолучитьСпециальностиResponse(ServiceReference1C.Специальность[] @return)
+        public ПолучитьСпециальностиResponse(ServiceReference1COLD.Специальность[] @return)
         {
             this.@return = @return;
         }
@@ -5286,13 +5281,13 @@ namespace ServiceReference1C
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable = true)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.ТипМероприятия[] @return;
+        public ServiceReference1COLD.ТипМероприятия[] @return;
 
         public ПолучитьТипыМероприятийResponse()
         {
         }
 
-        public ПолучитьТипыМероприятийResponse(ServiceReference1C.ТипМероприятия[] @return)
+        public ПолучитьТипыМероприятийResponse(ServiceReference1COLD.ТипМероприятия[] @return)
         {
             this.@return = @return;
         }
@@ -5320,13 +5315,13 @@ namespace ServiceReference1C
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable = true)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.ПрисваиваемаяКвалификация[] @return;
+        public ServiceReference1COLD.ПрисваиваемаяКвалификация[] @return;
 
         public ПолучитьКвалификацииResponse()
         {
         }
 
-        public ПолучитьКвалификацииResponse(ServiceReference1C.ПрисваиваемаяКвалификация[] @return)
+        public ПолучитьКвалификацииResponse(ServiceReference1COLD.ПрисваиваемаяКвалификация[] @return)
         {
             this.@return = @return;
         }
@@ -5354,13 +5349,13 @@ namespace ServiceReference1C
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable = true)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.ВыдаваемыйДокумент[] @return;
+        public ServiceReference1COLD.ВыдаваемыйДокумент[] @return;
 
         public ПолучитьВыдаваемыеДокументыResponse()
         {
         }
 
-        public ПолучитьВыдаваемыеДокументыResponse(ServiceReference1C.ВыдаваемыйДокумент[] @return)
+        public ПолучитьВыдаваемыеДокументыResponse(ServiceReference1COLD.ВыдаваемыйДокумент[] @return)
         {
             this.@return = @return;
         }
@@ -5397,13 +5392,13 @@ namespace ServiceReference1C
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable = true)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.СтрокаСпискаУспеваемости[] @return;
+        public ServiceReference1COLD.СтрокаСпискаУспеваемости[] @return;
 
         public ПолучитьУспеваемостьСтудентовResponse()
         {
         }
 
-        public ПолучитьУспеваемостьСтудентовResponse(ServiceReference1C.СтрокаСпискаУспеваемости[] @return)
+        public ПолучитьУспеваемостьСтудентовResponse(ServiceReference1COLD.СтрокаСпискаУспеваемости[] @return)
         {
             this.@return = @return;
         }
@@ -5444,13 +5439,13 @@ namespace ServiceReference1C
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable = true)]
-        public ServiceReference1C.НайденныйСлушатель[] @return;
+        public ServiceReference1COLD.НайденныйСлушатель[] @return;
 
         public ПолучитьСлушателейПоФИОResponse()
         {
         }
 
-        public ПолучитьСлушателейПоФИОResponse(ServiceReference1C.НайденныйСлушатель[] @return)
+        public ПолучитьСлушателейПоФИОResponse(ServiceReference1COLD.НайденныйСлушатель[] @return)
         {
             this.@return = @return;
         }
@@ -5724,13 +5719,13 @@ namespace ServiceReference1C
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.ДанныеОСлушателеФЛ[] @return;
+        public ServiceReference1COLD.ДанныеОСлушателеФЛ[] @return;
 
         public ПолучитьДанныеОСлушателяхФЛResponse()
         {
         }
 
-        public ПолучитьДанныеОСлушателяхФЛResponse(ServiceReference1C.ДанныеОСлушателеФЛ[] @return)
+        public ПолучитьДанныеОСлушателяхФЛResponse(ServiceReference1COLD.ДанныеОСлушателеФЛ[] @return)
         {
             this.@return = @return;
         }
@@ -5771,13 +5766,13 @@ namespace ServiceReference1C
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayItemAttribute("Состав", IsNullable = false)]
-        public ServiceReference1C.ДанныеПоФизЛицу[] @return;
+        public ServiceReference1COLD.ДанныеПоФизЛицу[] @return;
 
         public ПолучитьИзмененныеДанныеОФЛЗаПериодResponse()
         {
         }
 
-        public ПолучитьИзмененныеДанныеОФЛЗаПериодResponse(ServiceReference1C.ДанныеПоФизЛицу[] @return)
+        public ПолучитьИзмененныеДанныеОФЛЗаПериодResponse(ServiceReference1COLD.ДанныеПоФизЛицу[] @return)
         {
             this.@return = @return;
         }
@@ -5818,13 +5813,13 @@ namespace ServiceReference1C
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlArrayItemAttribute(IsNullable = false)]
-        public ServiceReference1C.ProgramEdu[] @return;
+        public ServiceReference1COLD.ProgramEdu[] @return;
 
         public ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодResponse()
         {
         }
 
-        public ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодResponse(ServiceReference1C.ProgramEdu[] @return)
+        public ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодResponse(ServiceReference1COLD.ProgramEdu[] @return)
         {
             this.@return = @return;
         }
@@ -5865,13 +5860,13 @@ namespace ServiceReference1C
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable = true)]
-        public ServiceReference1C.flGUIDs @return;
+        public ServiceReference1COLD.flGUIDs @return;
 
         public ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеResponse()
         {
         }
 
-        public ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеResponse(ServiceReference1C.flGUIDs @return)
+        public ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеResponse(ServiceReference1COLD.flGUIDs @return)
         {
             this.@return = @return;
         }
@@ -5938,105 +5933,26 @@ namespace ServiceReference1C
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
-        public ServiceReference1C.flGUIDs @return;
+        public ServiceReference1COLD.flGUIDs @return;
 
         public СоздатьФизЛицоResponse()
         {
         }
 
-        public СоздатьФизЛицоResponse(ServiceReference1C.flGUIDs @return)
-        {
-            this.@return = @return;
-        }
-    }
-
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("dotnet-svcutil", "1.0.0.1")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName = "ЗачислитьСтудента", WrapperNamespace = "http://localhost/dposervices", IsWrapped = true)]
-    public partial class ЗачислитьСтудентаRequest
-    {
-
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
-        public string GUIDПрограммаОбучения;
-
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 1)]
-        public string GUIDФизЛицо;
-
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 2)]
-        public string НазваниеДоговора;
-
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 3)]
-        public string НазваниеГруппы;
-
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 4)]
-        public string НазваниеПодгруппы;
-
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 5)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType = "date")]
-        public System.DateTime ДатаНачалаОбучения;
-
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 6)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType = "date")]
-        public System.DateTime ДатаОкончанияОбучения;
-
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 7)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType = "date")]
-        public System.DateTime ДатаЗакрытияДоговора;
-
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 8)]
-        public string НазваниеПриказа;
-
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 9)]
-        public int СуммаДоговора;
-
-        public ЗачислитьСтудентаRequest()
-        {
-        }
-
-        public ЗачислитьСтудентаRequest(string GUIDПрограммаОбучения, string GUIDФизЛицо, string НазваниеДоговора, string НазваниеГруппы, string НазваниеПодгруппы, System.DateTime ДатаНачалаОбучения, System.DateTime ДатаОкончанияОбучения, System.DateTime ДатаЗакрытияДоговора, string НазваниеПриказа, int СуммаДоговора)
-        {
-            this.GUIDПрограммаОбучения = GUIDПрограммаОбучения;
-            this.GUIDФизЛицо = GUIDФизЛицо;
-            this.НазваниеДоговора = НазваниеДоговора;
-            this.НазваниеГруппы = НазваниеГруппы;
-            this.НазваниеПодгруппы = НазваниеПодгруппы;
-            this.ДатаНачалаОбучения = ДатаНачалаОбучения;
-            this.ДатаОкончанияОбучения = ДатаОкончанияОбучения;
-            this.ДатаЗакрытияДоговора = ДатаЗакрытияДоговора;
-            this.НазваниеПриказа = НазваниеПриказа;
-            this.СуммаДоговора = СуммаДоговора;
-        }
-    }
-
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("dotnet-svcutil", "1.0.0.1")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName = "ЗачислитьСтудентаResponse", WrapperNamespace = "http://localhost/dposervices", IsWrapped = true)]
-    public partial class ЗачислитьСтудентаResponse
-    {
-
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "http://localhost/dposervices", Order = 0)]
-        public string @return;
-
-        public ЗачислитьСтудентаResponse()
-        {
-        }
-
-        public ЗачислитьСтудентаResponse(string @return)
+        public СоздатьФизЛицоResponse(ServiceReference1COLD.flGUIDs @return)
         {
             this.@return = @return;
         }
     }
 
     [System.CodeDom.Compiler.GeneratedCodeAttribute("dotnet-svcutil", "1.0.0.1")]
-    public interface ПФ_ПорталДПОPortTypeChannel : ServiceReference1C.ПФ_ПорталДПОPortType, System.ServiceModel.IClientChannel
+    public interface ПФ_ПорталДПОPortTypeChannel : ServiceReference1COLD.ПФ_ПорталДПОPortType, System.ServiceModel.IClientChannel
     {
     }
 
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("dotnet-svcutil", "1.0.0.1")]
-    public partial class ПФ_ПорталДПОPortTypeClient : System.ServiceModel.ClientBase<ServiceReference1C.ПФ_ПорталДПОPortType>, ServiceReference1C.ПФ_ПорталДПОPortType
+    public partial class ПФ_ПорталДПОPortTypeClient : System.ServiceModel.ClientBase<ServiceReference1COLD.ПФ_ПорталДПОPortType>, ServiceReference1COLD.ПФ_ПорталДПОPortType
     {
 
         /// <summary>
@@ -6076,366 +5992,366 @@ namespace ServiceReference1C
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьСлушателейResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьСлушателейAsync(ServiceReference1C.ПолучитьСлушателейRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьСлушателейResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьСлушателейAsync(ServiceReference1COLD.ПолучитьСлушателейRequest request)
         {
             return base.Channel.ПолучитьСлушателейAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьСлушателейResponse> ПолучитьСлушателейAsync(System.Nullable<System.DateTime> НаДату)
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьСлушателейResponse> ПолучитьСлушателейAsync(System.Nullable<System.DateTime> НаДату)
         {
-            ServiceReference1C.ПолучитьСлушателейRequest inValue = new ServiceReference1C.ПолучитьСлушателейRequest();
+            ServiceReference1COLD.ПолучитьСлушателейRequest inValue = new ServiceReference1COLD.ПолучитьСлушателейRequest();
             inValue.НаДату = НаДату;
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьСлушателейAsync(inValue);
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьСлушателейAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьУспеваемостьResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьУспеваемостьAsync(ServiceReference1C.ПолучитьУспеваемостьRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьУспеваемостьResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьУспеваемостьAsync(ServiceReference1COLD.ПолучитьУспеваемостьRequest request)
         {
             return base.Channel.ПолучитьУспеваемостьAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьУспеваемостьResponse> ПолучитьУспеваемостьAsync(System.Nullable<System.DateTime> НаДату)
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьУспеваемостьResponse> ПолучитьУспеваемостьAsync(System.Nullable<System.DateTime> НаДату)
         {
-            ServiceReference1C.ПолучитьУспеваемостьRequest inValue = new ServiceReference1C.ПолучитьУспеваемостьRequest();
+            ServiceReference1COLD.ПолучитьУспеваемостьRequest inValue = new ServiceReference1COLD.ПолучитьУспеваемостьRequest();
             inValue.НаДату = НаДату;
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьУспеваемостьAsync(inValue);
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьУспеваемостьAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьДоговораResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьДоговораAsync(ServiceReference1C.ПолучитьДоговораRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьДоговораResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьДоговораAsync(ServiceReference1COLD.ПолучитьДоговораRequest request)
         {
             return base.Channel.ПолучитьДоговораAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьДоговораResponse> ПолучитьДоговораAsync()
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьДоговораResponse> ПолучитьДоговораAsync()
         {
-            ServiceReference1C.ПолучитьДоговораRequest inValue = new ServiceReference1C.ПолучитьДоговораRequest();
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьДоговораAsync(inValue);
+            ServiceReference1COLD.ПолучитьДоговораRequest inValue = new ServiceReference1COLD.ПолучитьДоговораRequest();
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьДоговораAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьОплатыResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьОплатыAsync(ServiceReference1C.ПолучитьОплатыRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьОплатыResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьОплатыAsync(ServiceReference1COLD.ПолучитьОплатыRequest request)
         {
             return base.Channel.ПолучитьОплатыAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьОплатыResponse> ПолучитьОплатыAsync()
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьОплатыResponse> ПолучитьОплатыAsync()
         {
-            ServiceReference1C.ПолучитьОплатыRequest inValue = new ServiceReference1C.ПолучитьОплатыRequest();
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьОплатыAsync(inValue);
+            ServiceReference1COLD.ПолучитьОплатыRequest inValue = new ServiceReference1COLD.ПолучитьОплатыRequest();
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьОплатыAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.СоздатьВедомостьResponse> ServiceReference1C.ПФ_ПорталДПОPortType.СоздатьВедомостьAsync(ServiceReference1C.СоздатьВедомостьRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.СоздатьВедомостьResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.СоздатьВедомостьAsync(ServiceReference1COLD.СоздатьВедомостьRequest request)
         {
             return base.Channel.СоздатьВедомостьAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.СоздатьВедомостьResponse> СоздатьВедомостьAsync(string ГУИДПреподавателя, string ГУИДПрограммыОбучения, string ГУИДФормыКонтроля, string ГУИДДисциплины, System.DateTime ДатаСдачи)
+        public System.Threading.Tasks.Task<ServiceReference1COLD.СоздатьВедомостьResponse> СоздатьВедомостьAsync(string ГУИДПреподавателя, string ГУИДПрограммыОбучения, string ГУИДФормыКонтроля, string ГУИДДисциплины, System.DateTime ДатаСдачи)
         {
-            ServiceReference1C.СоздатьВедомостьRequest inValue = new ServiceReference1C.СоздатьВедомостьRequest();
+            ServiceReference1COLD.СоздатьВедомостьRequest inValue = new ServiceReference1COLD.СоздатьВедомостьRequest();
             inValue.ГУИДПреподавателя = ГУИДПреподавателя;
             inValue.ГУИДПрограммыОбучения = ГУИДПрограммыОбучения;
             inValue.ГУИДФормыКонтроля = ГУИДФормыКонтроля;
             inValue.ГУИДДисциплины = ГУИДДисциплины;
             inValue.ДатаСдачи = ДатаСдачи;
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).СоздатьВедомостьAsync(inValue);
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).СоздатьВедомостьAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ВнестиОценкиResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ВнестиОценкиAsync(ServiceReference1C.ВнестиОценкиRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ВнестиОценкиResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ВнестиОценкиAsync(ServiceReference1COLD.ВнестиОценкиRequest request)
         {
             return base.Channel.ВнестиОценкиAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ВнестиОценкиResponse> ВнестиОценкиAsync(ServiceReference1C.СтрокаТЧВедомости[] ОценкиВедомости, string ГУИДВедомости)
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ВнестиОценкиResponse> ВнестиОценкиAsync(ServiceReference1COLD.СтрокаТЧВедомости[] ОценкиВедомости, string ГУИДВедомости)
         {
-            ServiceReference1C.ВнестиОценкиRequest inValue = new ServiceReference1C.ВнестиОценкиRequest();
+            ServiceReference1COLD.ВнестиОценкиRequest inValue = new ServiceReference1COLD.ВнестиОценкиRequest();
             inValue.ОценкиВедомости = ОценкиВедомости;
             inValue.ГУИДВедомости = ГУИДВедомости;
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ВнестиОценкиAsync(inValue);
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ВнестиОценкиAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ОтправитьОценкиНаПорталResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ОтправитьОценкиНаПорталAsync(ServiceReference1C.ОтправитьОценкиНаПорталRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ОтправитьОценкиНаПорталResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ОтправитьОценкиНаПорталAsync(ServiceReference1COLD.ОтправитьОценкиНаПорталRequest request)
         {
             return base.Channel.ОтправитьОценкиНаПорталAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ОтправитьОценкиНаПорталResponse> ОтправитьОценкиНаПорталAsync(string ГУИДВедомости, string ГУИДСлушателя)
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ОтправитьОценкиНаПорталResponse> ОтправитьОценкиНаПорталAsync(string ГУИДВедомости, string ГУИДСлушателя)
         {
-            ServiceReference1C.ОтправитьОценкиНаПорталRequest inValue = new ServiceReference1C.ОтправитьОценкиНаПорталRequest();
+            ServiceReference1COLD.ОтправитьОценкиНаПорталRequest inValue = new ServiceReference1COLD.ОтправитьОценкиНаПорталRequest();
             inValue.ГУИДВедомости = ГУИДВедомости;
             inValue.ГУИДСлушателя = ГУИДСлушателя;
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ОтправитьОценкиНаПорталAsync(inValue);
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ОтправитьОценкиНаПорталAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ДобавитьСтудентаВВедомостьResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ДобавитьСтудентаВВедомостьAsync(ServiceReference1C.ДобавитьСтудентаВВедомостьRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ДобавитьСтудентаВВедомостьResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ДобавитьСтудентаВВедомостьAsync(ServiceReference1COLD.ДобавитьСтудентаВВедомостьRequest request)
         {
             return base.Channel.ДобавитьСтудентаВВедомостьAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ДобавитьСтудентаВВедомостьResponse> ДобавитьСтудентаВВедомостьAsync(string ГУИДСлушателя, string ГУИДВедомости)
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ДобавитьСтудентаВВедомостьResponse> ДобавитьСтудентаВВедомостьAsync(string ГУИДСлушателя, string ГУИДВедомости)
         {
-            ServiceReference1C.ДобавитьСтудентаВВедомостьRequest inValue = new ServiceReference1C.ДобавитьСтудентаВВедомостьRequest();
+            ServiceReference1COLD.ДобавитьСтудентаВВедомостьRequest inValue = new ServiceReference1COLD.ДобавитьСтудентаВВедомостьRequest();
             inValue.ГУИДСлушателя = ГУИДСлушателя;
             inValue.ГУИДВедомости = ГУИДВедомости;
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ДобавитьСтудентаВВедомостьAsync(inValue);
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ДобавитьСтудентаВВедомостьAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьПреподавателейResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьПреподавателейAsync(ServiceReference1C.ПолучитьПреподавателейRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьПреподавателейResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьПреподавателейAsync(ServiceReference1COLD.ПолучитьПреподавателейRequest request)
         {
             return base.Channel.ПолучитьПреподавателейAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьПреподавателейResponse> ПолучитьПреподавателейAsync()
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьПреподавателейResponse> ПолучитьПреподавателейAsync()
         {
-            ServiceReference1C.ПолучитьПреподавателейRequest inValue = new ServiceReference1C.ПолучитьПреподавателейRequest();
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьПреподавателейAsync(inValue);
+            ServiceReference1COLD.ПолучитьПреподавателейRequest inValue = new ServiceReference1COLD.ПолучитьПреподавателейRequest();
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьПреподавателейAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьФормыКонтроляResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьФормыКонтроляAsync(ServiceReference1C.ПолучитьФормыКонтроляRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьФормыКонтроляResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьФормыКонтроляAsync(ServiceReference1COLD.ПолучитьФормыКонтроляRequest request)
         {
             return base.Channel.ПолучитьФормыКонтроляAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьФормыКонтроляResponse> ПолучитьФормыКонтроляAsync()
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьФормыКонтроляResponse> ПолучитьФормыКонтроляAsync()
         {
-            ServiceReference1C.ПолучитьФормыКонтроляRequest inValue = new ServiceReference1C.ПолучитьФормыКонтроляRequest();
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьФормыКонтроляAsync(inValue);
+            ServiceReference1COLD.ПолучитьФормыКонтроляRequest inValue = new ServiceReference1COLD.ПолучитьФормыКонтроляRequest();
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьФормыКонтроляAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьДисциплиныResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьДисциплиныAsync(ServiceReference1C.ПолучитьДисциплиныRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьДисциплиныResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьДисциплиныAsync(ServiceReference1COLD.ПолучитьДисциплиныRequest request)
         {
             return base.Channel.ПолучитьДисциплиныAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьДисциплиныResponse> ПолучитьДисциплиныAsync()
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьДисциплиныResponse> ПолучитьДисциплиныAsync()
         {
-            ServiceReference1C.ПолучитьДисциплиныRequest inValue = new ServiceReference1C.ПолучитьДисциплиныRequest();
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьДисциплиныAsync(inValue);
+            ServiceReference1COLD.ПолучитьДисциплиныRequest inValue = new ServiceReference1COLD.ПолучитьДисциплиныRequest();
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьДисциплиныAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьПрограммыОбученияResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьПрограммыОбученияAsync(ServiceReference1C.ПолучитьПрограммыОбученияRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьПрограммыОбученияResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьПрограммыОбученияAsync(ServiceReference1COLD.ПолучитьПрограммыОбученияRequest request)
         {
             return base.Channel.ПолучитьПрограммыОбученияAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьПрограммыОбученияResponse> ПолучитьПрограммыОбученияAsync()
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьПрограммыОбученияResponse> ПолучитьПрограммыОбученияAsync()
         {
-            ServiceReference1C.ПолучитьПрограммыОбученияRequest inValue = new ServiceReference1C.ПолучитьПрограммыОбученияRequest();
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьПрограммыОбученияAsync(inValue);
+            ServiceReference1COLD.ПолучитьПрограммыОбученияRequest inValue = new ServiceReference1COLD.ПолучитьПрограммыОбученияRequest();
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьПрограммыОбученияAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьГруппыResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьГруппыAsync(ServiceReference1C.ПолучитьГруппыRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьГруппыResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьГруппыAsync(ServiceReference1COLD.ПолучитьГруппыRequest request)
         {
             return base.Channel.ПолучитьГруппыAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьГруппыResponse> ПолучитьГруппыAsync()
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьГруппыResponse> ПолучитьГруппыAsync()
         {
-            ServiceReference1C.ПолучитьГруппыRequest inValue = new ServiceReference1C.ПолучитьГруппыRequest();
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьГруппыAsync(inValue);
+            ServiceReference1COLD.ПолучитьГруппыRequest inValue = new ServiceReference1COLD.ПолучитьГруппыRequest();
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьГруппыAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьУровниОбразованияResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьУровниОбразованияAsync(ServiceReference1C.ПолучитьУровниОбразованияRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьУровниОбразованияResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьУровниОбразованияAsync(ServiceReference1COLD.ПолучитьУровниОбразованияRequest request)
         {
             return base.Channel.ПолучитьУровниОбразованияAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьУровниОбразованияResponse> ПолучитьУровниОбразованияAsync()
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьУровниОбразованияResponse> ПолучитьУровниОбразованияAsync()
         {
-            ServiceReference1C.ПолучитьУровниОбразованияRequest inValue = new ServiceReference1C.ПолучитьУровниОбразованияRequest();
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьУровниОбразованияAsync(inValue);
+            ServiceReference1COLD.ПолучитьУровниОбразованияRequest inValue = new ServiceReference1COLD.ПолучитьУровниОбразованияRequest();
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьУровниОбразованияAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьБазовыеОбразованияResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьБазовыеОбразованияAsync(ServiceReference1C.ПолучитьБазовыеОбразованияRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьБазовыеОбразованияResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьБазовыеОбразованияAsync(ServiceReference1COLD.ПолучитьБазовыеОбразованияRequest request)
         {
             return base.Channel.ПолучитьБазовыеОбразованияAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьБазовыеОбразованияResponse> ПолучитьБазовыеОбразованияAsync()
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьБазовыеОбразованияResponse> ПолучитьБазовыеОбразованияAsync()
         {
-            ServiceReference1C.ПолучитьБазовыеОбразованияRequest inValue = new ServiceReference1C.ПолучитьБазовыеОбразованияRequest();
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьБазовыеОбразованияAsync(inValue);
+            ServiceReference1COLD.ПолучитьБазовыеОбразованияRequest inValue = new ServiceReference1COLD.ПолучитьБазовыеОбразованияRequest();
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьБазовыеОбразованияAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьОценкиResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьОценкиAsync(ServiceReference1C.ПолучитьОценкиRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьОценкиResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьОценкиAsync(ServiceReference1COLD.ПолучитьОценкиRequest request)
         {
             return base.Channel.ПолучитьОценкиAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьОценкиResponse> ПолучитьОценкиAsync()
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьОценкиResponse> ПолучитьОценкиAsync()
         {
-            ServiceReference1C.ПолучитьОценкиRequest inValue = new ServiceReference1C.ПолучитьОценкиRequest();
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьОценкиAsync(inValue);
+            ServiceReference1COLD.ПолучитьОценкиRequest inValue = new ServiceReference1COLD.ПолучитьОценкиRequest();
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьОценкиAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьТипыДоговоровResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьТипыДоговоровAsync(ServiceReference1C.ПолучитьТипыДоговоровRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьТипыДоговоровResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьТипыДоговоровAsync(ServiceReference1COLD.ПолучитьТипыДоговоровRequest request)
         {
             return base.Channel.ПолучитьТипыДоговоровAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьТипыДоговоровResponse> ПолучитьТипыДоговоровAsync()
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьТипыДоговоровResponse> ПолучитьТипыДоговоровAsync()
         {
-            ServiceReference1C.ПолучитьТипыДоговоровRequest inValue = new ServiceReference1C.ПолучитьТипыДоговоровRequest();
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьТипыДоговоровAsync(inValue);
+            ServiceReference1COLD.ПолучитьТипыДоговоровRequest inValue = new ServiceReference1COLD.ПолучитьТипыДоговоровRequest();
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьТипыДоговоровAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьПлательщиковResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьПлательщиковAsync(ServiceReference1C.ПолучитьПлательщиковRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьПлательщиковResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьПлательщиковAsync(ServiceReference1COLD.ПолучитьПлательщиковRequest request)
         {
             return base.Channel.ПолучитьПлательщиковAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьПлательщиковResponse> ПолучитьПлательщиковAsync()
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьПлательщиковResponse> ПолучитьПлательщиковAsync()
         {
-            ServiceReference1C.ПолучитьПлательщиковRequest inValue = new ServiceReference1C.ПолучитьПлательщиковRequest();
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьПлательщиковAsync(inValue);
+            ServiceReference1COLD.ПолучитьПлательщиковRequest inValue = new ServiceReference1COLD.ПолучитьПлательщиковRequest();
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьПлательщиковAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьОборудованиеResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьОборудованиеAsync(ServiceReference1C.ПолучитьОборудованиеRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьОборудованиеResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьОборудованиеAsync(ServiceReference1COLD.ПолучитьОборудованиеRequest request)
         {
             return base.Channel.ПолучитьОборудованиеAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьОборудованиеResponse> ПолучитьОборудованиеAsync()
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьОборудованиеResponse> ПолучитьОборудованиеAsync()
         {
-            ServiceReference1C.ПолучитьОборудованиеRequest inValue = new ServiceReference1C.ПолучитьОборудованиеRequest();
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьОборудованиеAsync(inValue);
+            ServiceReference1COLD.ПолучитьОборудованиеRequest inValue = new ServiceReference1COLD.ПолучитьОборудованиеRequest();
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьОборудованиеAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьГруппыПрограммОбученияResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьГруппыПрограммОбученияAsync(ServiceReference1C.ПолучитьГруппыПрограммОбученияRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьГруппыПрограммОбученияResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьГруппыПрограммОбученияAsync(ServiceReference1COLD.ПолучитьГруппыПрограммОбученияRequest request)
         {
             return base.Channel.ПолучитьГруппыПрограммОбученияAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьГруппыПрограммОбученияResponse> ПолучитьГруппыПрограммОбученияAsync()
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьГруппыПрограммОбученияResponse> ПолучитьГруппыПрограммОбученияAsync()
         {
-            ServiceReference1C.ПолучитьГруппыПрограммОбученияRequest inValue = new ServiceReference1C.ПолучитьГруппыПрограммОбученияRequest();
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьГруппыПрограммОбученияAsync(inValue);
+            ServiceReference1COLD.ПолучитьГруппыПрограммОбученияRequest inValue = new ServiceReference1COLD.ПолучитьГруппыПрограммОбученияRequest();
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьГруппыПрограммОбученияAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьВидыПрограммResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьВидыПрограммAsync(ServiceReference1C.ПолучитьВидыПрограммRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьВидыПрограммResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьВидыПрограммAsync(ServiceReference1COLD.ПолучитьВидыПрограммRequest request)
         {
             return base.Channel.ПолучитьВидыПрограммAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьВидыПрограммResponse> ПолучитьВидыПрограммAsync()
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьВидыПрограммResponse> ПолучитьВидыПрограммAsync()
         {
-            ServiceReference1C.ПолучитьВидыПрограммRequest inValue = new ServiceReference1C.ПолучитьВидыПрограммRequest();
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьВидыПрограммAsync(inValue);
+            ServiceReference1COLD.ПолучитьВидыПрограммRequest inValue = new ServiceReference1COLD.ПолучитьВидыПрограммRequest();
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьВидыПрограммAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьФормыОбученияResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьФормыОбученияAsync(ServiceReference1C.ПолучитьФормыОбученияRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьФормыОбученияResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьФормыОбученияAsync(ServiceReference1COLD.ПолучитьФормыОбученияRequest request)
         {
             return base.Channel.ПолучитьФормыОбученияAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьФормыОбученияResponse> ПолучитьФормыОбученияAsync()
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьФормыОбученияResponse> ПолучитьФормыОбученияAsync()
         {
-            ServiceReference1C.ПолучитьФормыОбученияRequest inValue = new ServiceReference1C.ПолучитьФормыОбученияRequest();
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьФормыОбученияAsync(inValue);
+            ServiceReference1COLD.ПолучитьФормыОбученияRequest inValue = new ServiceReference1COLD.ПолучитьФормыОбученияRequest();
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьФормыОбученияAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьСпециальностиResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьСпециальностиAsync(ServiceReference1C.ПолучитьСпециальностиRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьСпециальностиResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьСпециальностиAsync(ServiceReference1COLD.ПолучитьСпециальностиRequest request)
         {
             return base.Channel.ПолучитьСпециальностиAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьСпециальностиResponse> ПолучитьСпециальностиAsync()
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьСпециальностиResponse> ПолучитьСпециальностиAsync()
         {
-            ServiceReference1C.ПолучитьСпециальностиRequest inValue = new ServiceReference1C.ПолучитьСпециальностиRequest();
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьСпециальностиAsync(inValue);
+            ServiceReference1COLD.ПолучитьСпециальностиRequest inValue = new ServiceReference1COLD.ПолучитьСпециальностиRequest();
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьСпециальностиAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьТипыМероприятийResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьТипыМероприятийAsync(ServiceReference1C.ПолучитьТипыМероприятийRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьТипыМероприятийResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьТипыМероприятийAsync(ServiceReference1COLD.ПолучитьТипыМероприятийRequest request)
         {
             return base.Channel.ПолучитьТипыМероприятийAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьТипыМероприятийResponse> ПолучитьТипыМероприятийAsync()
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьТипыМероприятийResponse> ПолучитьТипыМероприятийAsync()
         {
-            ServiceReference1C.ПолучитьТипыМероприятийRequest inValue = new ServiceReference1C.ПолучитьТипыМероприятийRequest();
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьТипыМероприятийAsync(inValue);
+            ServiceReference1COLD.ПолучитьТипыМероприятийRequest inValue = new ServiceReference1COLD.ПолучитьТипыМероприятийRequest();
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьТипыМероприятийAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьКвалификацииResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьКвалификацииAsync(ServiceReference1C.ПолучитьКвалификацииRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьКвалификацииResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьКвалификацииAsync(ServiceReference1COLD.ПолучитьКвалификацииRequest request)
         {
             return base.Channel.ПолучитьКвалификацииAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьКвалификацииResponse> ПолучитьКвалификацииAsync()
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьКвалификацииResponse> ПолучитьКвалификацииAsync()
         {
-            ServiceReference1C.ПолучитьКвалификацииRequest inValue = new ServiceReference1C.ПолучитьКвалификацииRequest();
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьКвалификацииAsync(inValue);
+            ServiceReference1COLD.ПолучитьКвалификацииRequest inValue = new ServiceReference1COLD.ПолучитьКвалификацииRequest();
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьКвалификацииAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьВыдаваемыеДокументыResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьВыдаваемыеДокументыAsync(ServiceReference1C.ПолучитьВыдаваемыеДокументыRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьВыдаваемыеДокументыResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьВыдаваемыеДокументыAsync(ServiceReference1COLD.ПолучитьВыдаваемыеДокументыRequest request)
         {
             return base.Channel.ПолучитьВыдаваемыеДокументыAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьВыдаваемыеДокументыResponse> ПолучитьВыдаваемыеДокументыAsync()
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьВыдаваемыеДокументыResponse> ПолучитьВыдаваемыеДокументыAsync()
         {
-            ServiceReference1C.ПолучитьВыдаваемыеДокументыRequest inValue = new ServiceReference1C.ПолучитьВыдаваемыеДокументыRequest();
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьВыдаваемыеДокументыAsync(inValue);
+            ServiceReference1COLD.ПолучитьВыдаваемыеДокументыRequest inValue = new ServiceReference1COLD.ПолучитьВыдаваемыеДокументыRequest();
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьВыдаваемыеДокументыAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьУспеваемостьСтудентовResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьУспеваемостьСтудентовAsync(ServiceReference1C.ПолучитьУспеваемостьСтудентовRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьУспеваемостьСтудентовResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьУспеваемостьСтудентовAsync(ServiceReference1COLD.ПолучитьУспеваемостьСтудентовRequest request)
         {
             return base.Channel.ПолучитьУспеваемостьСтудентовAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьУспеваемостьСтудентовResponse> ПолучитьУспеваемостьСтудентовAsync(string ГУИДСлушателя)
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьУспеваемостьСтудентовResponse> ПолучитьУспеваемостьСтудентовAsync(string ГУИДСлушателя)
         {
-            ServiceReference1C.ПолучитьУспеваемостьСтудентовRequest inValue = new ServiceReference1C.ПолучитьУспеваемостьСтудентовRequest();
+            ServiceReference1COLD.ПолучитьУспеваемостьСтудентовRequest inValue = new ServiceReference1COLD.ПолучитьУспеваемостьСтудентовRequest();
             inValue.ГУИДСлушателя = ГУИДСлушателя;
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьУспеваемостьСтудентовAsync(inValue);
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьУспеваемостьСтудентовAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьСлушателейПоФИОResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьСлушателейПоФИОAsync(ServiceReference1C.ПолучитьСлушателейПоФИОRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьСлушателейПоФИОResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьСлушателейПоФИОAsync(ServiceReference1COLD.ПолучитьСлушателейПоФИОRequest request)
         {
             return base.Channel.ПолучитьСлушателейПоФИОAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьСлушателейПоФИОResponse> ПолучитьСлушателейПоФИОAsync(string ФИО, string НомерДиплома)
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьСлушателейПоФИОResponse> ПолучитьСлушателейПоФИОAsync(string ФИО, string НомерДиплома)
         {
-            ServiceReference1C.ПолучитьСлушателейПоФИОRequest inValue = new ServiceReference1C.ПолучитьСлушателейПоФИОRequest();
+            ServiceReference1COLD.ПолучитьСлушателейПоФИОRequest inValue = new ServiceReference1COLD.ПолучитьСлушателейПоФИОRequest();
             inValue.ФИО = ФИО;
             inValue.НомерДиплома = НомерДиплома;
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьСлушателейПоФИОAsync(inValue);
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьСлушателейПоФИОAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.СоздатьАттестационнуюВедомостьResponse> ServiceReference1C.ПФ_ПорталДПОPortType.СоздатьАттестационнуюВедомостьAsync(ServiceReference1C.СоздатьАттестационнуюВедомостьRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.СоздатьАттестационнуюВедомостьResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.СоздатьАттестационнуюВедомостьAsync(ServiceReference1COLD.СоздатьАттестационнуюВедомостьRequest request)
         {
             return base.Channel.СоздатьАттестационнуюВедомостьAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.СоздатьАттестационнуюВедомостьResponse> СоздатьАттестационнуюВедомостьAsync(string GUIDTeacher, string GUIDProgram, string GUIDFormControl, string GUIDSubject, string GUIDGroup, System.DateTime Data, string Number)
+        public System.Threading.Tasks.Task<ServiceReference1COLD.СоздатьАттестационнуюВедомостьResponse> СоздатьАттестационнуюВедомостьAsync(string GUIDTeacher, string GUIDProgram, string GUIDFormControl, string GUIDSubject, string GUIDGroup, System.DateTime Data, string Number)
         {
-            ServiceReference1C.СоздатьАттестационнуюВедомостьRequest inValue = new ServiceReference1C.СоздатьАттестационнуюВедомостьRequest();
+            ServiceReference1COLD.СоздатьАттестационнуюВедомостьRequest inValue = new ServiceReference1COLD.СоздатьАттестационнуюВедомостьRequest();
             inValue.GUIDTeacher = GUIDTeacher;
             inValue.GUIDProgram = GUIDProgram;
             inValue.GUIDFormControl = GUIDFormControl;
@@ -6443,110 +6359,110 @@ namespace ServiceReference1C
             inValue.GUIDGroup = GUIDGroup;
             inValue.Data = Data;
             inValue.Number = Number;
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).СоздатьАттестационнуюВедомостьAsync(inValue);
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).СоздатьАттестационнуюВедомостьAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ДобавитьСтудентаВАттестационнуюВедомостьResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ДобавитьСтудентаВАттестационнуюВедомостьAsync(ServiceReference1C.ДобавитьСтудентаВАттестационнуюВедомостьRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ДобавитьСтудентаВАттестационнуюВедомостьResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ДобавитьСтудентаВАттестационнуюВедомостьAsync(ServiceReference1COLD.ДобавитьСтудентаВАттестационнуюВедомостьRequest request)
         {
             return base.Channel.ДобавитьСтудентаВАттестационнуюВедомостьAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ДобавитьСтудентаВАттестационнуюВедомостьResponse> ДобавитьСтудентаВАттестационнуюВедомостьAsync(string GUIDAV, string GUIDStudent, string GUIDRate, System.Nullable<bool> excellent, string comment)
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ДобавитьСтудентаВАттестационнуюВедомостьResponse> ДобавитьСтудентаВАттестационнуюВедомостьAsync(string GUIDAV, string GUIDStudent, string GUIDRate, System.Nullable<bool> excellent, string comment)
         {
-            ServiceReference1C.ДобавитьСтудентаВАттестационнуюВедомостьRequest inValue = new ServiceReference1C.ДобавитьСтудентаВАттестационнуюВедомостьRequest();
+            ServiceReference1COLD.ДобавитьСтудентаВАттестационнуюВедомостьRequest inValue = new ServiceReference1COLD.ДобавитьСтудентаВАттестационнуюВедомостьRequest();
             inValue.GUIDAV = GUIDAV;
             inValue.GUIDStudent = GUIDStudent;
             inValue.GUIDRate = GUIDRate;
             inValue.excellent = excellent;
             inValue.comment = comment;
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ДобавитьСтудентаВАттестационнуюВедомостьAsync(inValue);
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ДобавитьСтудентаВАттестационнуюВедомостьAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.СоздатьВедомостьПосещаемостиResponse> ServiceReference1C.ПФ_ПорталДПОPortType.СоздатьВедомостьПосещаемостиAsync(ServiceReference1C.СоздатьВедомостьПосещаемостиRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.СоздатьВедомостьПосещаемостиResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.СоздатьВедомостьПосещаемостиAsync(ServiceReference1COLD.СоздатьВедомостьПосещаемостиRequest request)
         {
             return base.Channel.СоздатьВедомостьПосещаемостиAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.СоздатьВедомостьПосещаемостиResponse> СоздатьВедомостьПосещаемостиAsync(string GUIDProgram, string GUIDSubject, string GUIDGroup, string GUIDSubGroup, System.DateTime Data)
+        public System.Threading.Tasks.Task<ServiceReference1COLD.СоздатьВедомостьПосещаемостиResponse> СоздатьВедомостьПосещаемостиAsync(string GUIDProgram, string GUIDSubject, string GUIDGroup, string GUIDSubGroup, System.DateTime Data)
         {
-            ServiceReference1C.СоздатьВедомостьПосещаемостиRequest inValue = new ServiceReference1C.СоздатьВедомостьПосещаемостиRequest();
+            ServiceReference1COLD.СоздатьВедомостьПосещаемостиRequest inValue = new ServiceReference1COLD.СоздатьВедомостьПосещаемостиRequest();
             inValue.GUIDProgram = GUIDProgram;
             inValue.GUIDSubject = GUIDSubject;
             inValue.GUIDGroup = GUIDGroup;
             inValue.GUIDSubGroup = GUIDSubGroup;
             inValue.Data = Data;
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).СоздатьВедомостьПосещаемостиAsync(inValue);
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).СоздатьВедомостьПосещаемостиAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ДобавитьСтудентаВВедомостьПосещаемостиResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ДобавитьСтудентаВВедомостьПосещаемостиAsync(ServiceReference1C.ДобавитьСтудентаВВедомостьПосещаемостиRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ДобавитьСтудентаВВедомостьПосещаемостиResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ДобавитьСтудентаВВедомостьПосещаемостиAsync(ServiceReference1COLD.ДобавитьСтудентаВВедомостьПосещаемостиRequest request)
         {
             return base.Channel.ДобавитьСтудентаВВедомостьПосещаемостиAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ДобавитьСтудентаВВедомостьПосещаемостиResponse> ДобавитьСтудентаВВедомостьПосещаемостиAsync(string GUIDVP, string GUIDStudent, System.Nullable<bool> Visit)
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ДобавитьСтудентаВВедомостьПосещаемостиResponse> ДобавитьСтудентаВВедомостьПосещаемостиAsync(string GUIDVP, string GUIDStudent, System.Nullable<bool> Visit)
         {
-            ServiceReference1C.ДобавитьСтудентаВВедомостьПосещаемостиRequest inValue = new ServiceReference1C.ДобавитьСтудентаВВедомостьПосещаемостиRequest();
+            ServiceReference1COLD.ДобавитьСтудентаВВедомостьПосещаемостиRequest inValue = new ServiceReference1COLD.ДобавитьСтудентаВВедомостьПосещаемостиRequest();
             inValue.GUIDVP = GUIDVP;
             inValue.GUIDStudent = GUIDStudent;
             inValue.Visit = Visit;
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ДобавитьСтудентаВВедомостьПосещаемостиAsync(inValue);
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ДобавитьСтудентаВВедомостьПосещаемостиAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьДанныеОСлушателяхФЛResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьДанныеОСлушателяхФЛAsync(ServiceReference1C.ПолучитьДанныеОСлушателяхФЛRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьДанныеОСлушателяхФЛResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьДанныеОСлушателяхФЛAsync(ServiceReference1COLD.ПолучитьДанныеОСлушателяхФЛRequest request)
         {
             return base.Channel.ПолучитьДанныеОСлушателяхФЛAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьДанныеОСлушателяхФЛResponse> ПолучитьДанныеОСлушателяхФЛAsync(string GUIDФизЛица)
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьДанныеОСлушателяхФЛResponse> ПолучитьДанныеОСлушателяхФЛAsync(string GUIDФизЛица)
         {
-            ServiceReference1C.ПолучитьДанныеОСлушателяхФЛRequest inValue = new ServiceReference1C.ПолучитьДанныеОСлушателяхФЛRequest();
+            ServiceReference1COLD.ПолучитьДанныеОСлушателяхФЛRequest inValue = new ServiceReference1COLD.ПолучитьДанныеОСлушателяхФЛRequest();
             inValue.GUIDФизЛица = GUIDФизЛица;
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьДанныеОСлушателяхФЛAsync(inValue);
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьДанныеОСлушателяхФЛAsync(inValue);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ФизЛицо> ПолучитьДанныеПоАттестациямФЛAsync(string GUIDФизЛица)
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ФизЛицо> ПолучитьДанныеПоАттестациямФЛAsync(string GUIDФизЛица)
         {
             return base.Channel.ПолучитьДанныеПоАттестациямФЛAsync(GUIDФизЛица);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ДанныеПоФизЛицу> ПолучитьДанныеОФЛAsync(string GUIDФизЛица)
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ДанныеПоФизЛицу> ПолучитьДанныеОФЛAsync(string GUIDФизЛица)
         {
             return base.Channel.ПолучитьДанныеОФЛAsync(GUIDФизЛица);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьИзмененныеДанныеОФЛЗаПериодResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьИзмененныеДанныеОФЛЗаПериодAsync(ServiceReference1C.ПолучитьИзмененныеДанныеОФЛЗаПериодRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьИзмененныеДанныеОФЛЗаПериодResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьИзмененныеДанныеОФЛЗаПериодAsync(ServiceReference1COLD.ПолучитьИзмененныеДанныеОФЛЗаПериодRequest request)
         {
             return base.Channel.ПолучитьИзмененныеДанныеОФЛЗаПериодAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьИзмененныеДанныеОФЛЗаПериодResponse> ПолучитьИзмененныеДанныеОФЛЗаПериодAsync(System.DateTime ДатаОт, System.DateTime ДатаДо)
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьИзмененныеДанныеОФЛЗаПериодResponse> ПолучитьИзмененныеДанныеОФЛЗаПериодAsync(System.DateTime ДатаОт, System.DateTime ДатаДо)
         {
-            ServiceReference1C.ПолучитьИзмененныеДанныеОФЛЗаПериодRequest inValue = new ServiceReference1C.ПолучитьИзмененныеДанныеОФЛЗаПериодRequest();
+            ServiceReference1COLD.ПолучитьИзмененныеДанныеОФЛЗаПериодRequest inValue = new ServiceReference1COLD.ПолучитьИзмененныеДанныеОФЛЗаПериодRequest();
             inValue.ДатаОт = ДатаОт;
             inValue.ДатаДо = ДатаДо;
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьИзмененныеДанныеОФЛЗаПериодAsync(inValue);
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьИзмененныеДанныеОФЛЗаПериодAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодAsync(ServiceReference1C.ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодAsync(ServiceReference1COLD.ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодRequest request)
         {
             return base.Channel.ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодResponse> ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодAsync(System.DateTime ДатаОт, System.DateTime ДатаДо)
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодResponse> ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодAsync(System.DateTime ДатаОт, System.DateTime ДатаДо)
         {
-            ServiceReference1C.ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодRequest inValue = new ServiceReference1C.ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодRequest();
+            ServiceReference1COLD.ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодRequest inValue = new ServiceReference1COLD.ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодRequest();
             inValue.ДатаОт = ДатаОт;
             inValue.ДатаДо = ДатаДо;
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодAsync(inValue);
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьИзмененныеДанныеОПрограммахДПОЗаПериодAsync(inValue);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ProgramEdu> ПолучитьДанныеОПрограммеAsync(string GUIDПрограммы)
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ProgramEdu> ПолучитьДанныеОПрограммеAsync(string GUIDПрограммы)
         {
             return base.Channel.ПолучитьДанныеОПрограммеAsync(GUIDПрограммы);
         }
@@ -6557,28 +6473,28 @@ namespace ServiceReference1C
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеAsync(ServiceReference1C.ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеAsync(ServiceReference1COLD.ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеRequest request)
         {
             return base.Channel.ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеResponse> ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеAsync(string Phone, string Email)
+        public System.Threading.Tasks.Task<ServiceReference1COLD.ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеResponse> ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеAsync(string Phone, string Email)
         {
-            ServiceReference1C.ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеRequest inValue = new ServiceReference1C.ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеRequest();
+            ServiceReference1COLD.ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеRequest inValue = new ServiceReference1COLD.ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеRequest();
             inValue.Phone = Phone;
             inValue.Email = Email;
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеAsync(inValue);
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).ПолучитьGUIDФизЛицаПоТелефонуИлиПочтеAsync(inValue);
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.СоздатьФизЛицоResponse> ServiceReference1C.ПФ_ПорталДПОPortType.СоздатьФизЛицоAsync(ServiceReference1C.СоздатьФизЛицоRequest request)
+        System.Threading.Tasks.Task<ServiceReference1COLD.СоздатьФизЛицоResponse> ServiceReference1COLD.ПФ_ПорталДПОPortType.СоздатьФизЛицоAsync(ServiceReference1COLD.СоздатьФизЛицоRequest request)
         {
             return base.Channel.СоздатьФизЛицоAsync(request);
         }
 
-        public System.Threading.Tasks.Task<ServiceReference1C.СоздатьФизЛицоResponse> СоздатьФизЛицоAsync(string ФИО, string Город, string Email, string Должность, System.DateTime ДатаРождения, string Образование, string ОпытЗанятияСпортом, string МестоЖительства, string Телефон)
+        public System.Threading.Tasks.Task<ServiceReference1COLD.СоздатьФизЛицоResponse> СоздатьФизЛицоAsync(string ФИО, string Город, string Email, string Должность, System.DateTime ДатаРождения, string Образование, string ОпытЗанятияСпортом, string МестоЖительства, string Телефон)
         {
-            ServiceReference1C.СоздатьФизЛицоRequest inValue = new ServiceReference1C.СоздатьФизЛицоRequest();
+            ServiceReference1COLD.СоздатьФизЛицоRequest inValue = new ServiceReference1COLD.СоздатьФизЛицоRequest();
             inValue.ФИО = ФИО;
             inValue.Город = Город;
             inValue.Email = Email;
@@ -6588,29 +6504,7 @@ namespace ServiceReference1C
             inValue.ОпытЗанятияСпортом = ОпытЗанятияСпортом;
             inValue.МестоЖительства = МестоЖительства;
             inValue.Телефон = Телефон;
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).СоздатьФизЛицоAsync(inValue);
-        }
-
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1C.ЗачислитьСтудентаResponse> ServiceReference1C.ПФ_ПорталДПОPortType.ЗачислитьСтудентаAsync(ServiceReference1C.ЗачислитьСтудентаRequest request)
-        {
-            return base.Channel.ЗачислитьСтудентаAsync(request);
-        }
-
-        public System.Threading.Tasks.Task<ServiceReference1C.ЗачислитьСтудентаResponse> ЗачислитьСтудентаAsync(string GUIDПрограммаОбучения, string GUIDФизЛицо, string НазваниеДоговора, string НазваниеГруппы, string НазваниеПодгруппы, System.DateTime ДатаНачалаОбучения, System.DateTime ДатаОкончанияОбучения, System.DateTime ДатаЗакрытияДоговора, string НазваниеПриказа, int СуммаДоговора)
-        {
-            ServiceReference1C.ЗачислитьСтудентаRequest inValue = new ServiceReference1C.ЗачислитьСтудентаRequest();
-            inValue.GUIDПрограммаОбучения = GUIDПрограммаОбучения;
-            inValue.GUIDФизЛицо = GUIDФизЛицо;
-            inValue.НазваниеДоговора = НазваниеДоговора;
-            inValue.НазваниеГруппы = НазваниеГруппы;
-            inValue.НазваниеПодгруппы = НазваниеПодгруппы;
-            inValue.ДатаНачалаОбучения = ДатаНачалаОбучения;
-            inValue.ДатаОкончанияОбучения = ДатаОкончанияОбучения;
-            inValue.ДатаЗакрытияДоговора = ДатаЗакрытияДоговора;
-            inValue.НазваниеПриказа = НазваниеПриказа;
-            inValue.СуммаДоговора = СуммаДоговора;
-            return ((ServiceReference1C.ПФ_ПорталДПОPortType)(this)).ЗачислитьСтудентаAsync(inValue);
+            return ((ServiceReference1COLD.ПФ_ПорталДПОPortType)(this)).СоздатьФизЛицоAsync(inValue);
         }
 
         public virtual System.Threading.Tasks.Task OpenAsync()
