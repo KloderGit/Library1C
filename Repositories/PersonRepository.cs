@@ -1,4 +1,5 @@
-﻿using Library1C.Interfaces;
+﻿using Library1C.DTO;
+using Library1C.Interfaces;
 using ServiceReference1C;
 using System;
 using System.Collections.Generic;
@@ -89,6 +90,64 @@ namespace Library1C.Repositories
             return query?.@return as flGUIDs;
         }
 
+
+
+        public async Task<string> Add2(AddPersonDTO value)
+        {
+            СоздатьФизЛицоResponse query = null;
+            try
+            {
+                query = await service.СоздатьФизЛицоAsync(
+                    value.FIO,
+                    value.City,
+                    value.Email,
+                    value.Position,
+                    value.BirthDay,
+                    value.Education,
+                    value.Expirience,
+                    value.Address,
+                    value.Phone
+                );
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            return query?.@return.GUID;
+        }
+
+
+
+
+        public async Task<string> InviteTo1C(AddLeadDTO value)
+        {
+            ЗачислитьСтудентаResponse result = null;
+
+            try
+            {
+                result = await service.ЗачислитьСтудентаAsync(
+                        value.ProgramGuid,
+                        value.UserGuid,
+                        value.ContractTitle,
+                        value.ContractGroup,
+                        value.ContractSubGroup,
+                        value.ContractEducationStart,
+                        value.ContractEducationEnd,
+                        value.ContractExpire,
+                        value.DecreeTitle,
+                        value.ContractPrice
+                    );
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            return result?.@return;
+        }
+
+
         /// <summary>
         /// Получить Guid ФЛ по данным карты
         /// </summary>
@@ -115,7 +174,6 @@ namespace Library1C.Repositories
             {
                 throw new Exception(ex.Message);
             }
-
         }
     }
 }
